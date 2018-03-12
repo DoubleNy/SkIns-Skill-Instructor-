@@ -1,0 +1,169 @@
+
+#pop h3{
+    white-space: nowrap;
+}
+
+#pop input{
+  margin: 5px;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+#pop button{
+  position: relative;
+  left : 100px;
+  top: 30px;
+  padding: 6px;
+  border: 0;
+  color: #fff;
+  background: #333;
+  margin-left: -5px;
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+
+#pop i {
+  position: relative;
+  left: 250px;
+  bottom: 150px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+#pop .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#pop {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  right: -100px;
+}
+
+
+.pop-up-forward h3{
+    white-space: nowrap;
+}
+
+.pop-up-forward input{
+  margin: 5px;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+.pop-up-forward button{
+  position: relative;
+  left : 100px;
+  top: 30px;
+  padding: 6px;
+  border: 0;
+  color: #fff;
+  background: #333;
+  margin-left: -5px;
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+
+.pop-up-forward i {
+  position: relative;
+  left: 250px;
+  bottom: 150px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.pop-up-forward .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.pop-up-forward{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  animation: mymove 1s ease forwards;
+}
+
+@keyframes mymove {
+  from {right: 0px;}
+  to {right: 600px;}
+  30% {filter: blur(1px);}
+  60% {filter: blur(3px);}
+}
+
+
+.pop-up-backward h3{
+    white-space: nowrap;
+}
+
+.pop-up-backard input{
+  margin: 5px;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+.pop-up-backward button{
+  position: relative;
+  left : 100px;
+  top: 30px;
+  padding: 6px;
+  border: 0;
+  color: #fff;
+  background: #333;
+  margin-left: -5px;
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+
+.pop-up-backward i {
+  position: relative;
+  left: 250px;
+  bottom: 150px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.pop-up-backward .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.pop-up-backward{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  animation: mymove2  1s ease forwards;
+}
+
+@keyframes mymove2 {
+    from {right: 600px;}
+    to {right: -100px;}
+    30% {filter: blur(1px);}
+    60% {filter: blur(3px);}
+}
