@@ -1,0 +1,97 @@
+:root {
+  --color1: #000000; /* culoarea textului, culoarea bordurilor, text-shadow */
+  --color2: #aaaaaa; /*  */
+  --color3: #ff6100; /* culoarea fundal la selectarea categoriilor */
+  --color4: #ffffff; /* textul din descrierea video-urilor */
+  --color5: #ededed; /* culoarea de fundal a body-ului */
+  --color6: #d1d1d1; /* fundal la subtitlu */
+  --color7: #FDF431; /* culorile pentru gradient */
+  --color8: #3E7B00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color5);
+  font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: var(--color1);
+}
+
+#imageSlider {
+  height: 80%;
+  background-image: url("../images/wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* "Navbar" cu categoriile destinate utilizatorului */
+#categories {
+  text-align: center;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: var(--color5);
+  border-top: 2px solid var(--color1);
+  border-bottom: 1px solid var(--color1);
+  margin-bottom: 100px;
+}
+
+#categories li {
+  float: center;
+
+}
+
+#categories li a, .dropdownButton {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 20px;
+}
+
+.dropdown:hover .dropdownButton {
+  background-color: var(--color3);
+  transition: background-color 1s;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdownContent {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  background-color: var(--color5);
+  width: 150px;
+  z-index: 1;
+  border-bottom: 1px solid var(--color1);
+}
+
+.dropdownContent a {
+  text-decoration: none;
+  display: block;
+  border-left: 1px solid var(--color1);
+  border-right: 1px solid var(--color1);
+  transition: background-color 1s;
+}
+
+.dropdownContent a:hover {
+  background-color: var(--color3);
+}
+
+.dropdown:hover .dropdownContent {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-out;
+}
