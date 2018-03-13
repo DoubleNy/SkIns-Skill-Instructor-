@@ -1,3 +1,12 @@
+  function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+  }
+
   function addPop() {
       //logare.classList.remove("pop-up-forward");
       var logare = document.getElementById('pop');
@@ -10,11 +19,12 @@
       if(hasClass){
         logare.classList.toggle("pop-up-backward");
         //elem.style.filter = "";
-
       } else {
+        logare.style.display = "block";
         logare.classList.toggle("pop-up-forward");
         //elem.style.filter = "blur(2px)";
       }
+
       //}
 }
 

@@ -43,13 +43,13 @@
 }
 
 #pop {
+  display: none;
   width: 100px;
   height: 100px;
   position: absolute;
   top: 200px;
   right: -100px;
 }
-
 
 .pop-up-forward h3{
     white-space: nowrap;

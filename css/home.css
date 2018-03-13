@@ -1,9 +1,15 @@
 
 :root {
   --hexaColor: #919595;
-}//
+}
+
 #navbar .hexagon{
   opacity: 1;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .hexagon {
