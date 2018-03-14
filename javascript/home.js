@@ -1,11 +1,15 @@
-  function sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
-      if ((new Date().getTime() - start) > milliseconds){
-        break;
-      }
+function myFunction(x) {
+    x.classList.toggle("change");
+    //addMenu();
+    var menu=document.getElementById('navbar');
+    //var has=menu.classList.contains("slide-right");
+    if(menu.classList.contains("slide-right")){
+      menu.classList.toggle("slide-left");
     }
-  }
+    else {
+      menu.classList.toggle("slide-right");
+    }
+}
 
   function addPop() {
       //logare.classList.remove("pop-up-forward");

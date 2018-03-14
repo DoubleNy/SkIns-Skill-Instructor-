@@ -1,22 +1,51 @@
-
 :root {
-  --hexaColor: #919595;
+  --hexaColor: #75FF63;
+  --color2: #004400;
+  --color3: #00A800;
+  --color4: #75FF63;
+  --color5: #D1D1D1;
 }
+
 
 #navbar .hexagon{
   opacity: 1;
 }
+#active1{
+    top:120px;
+    left:-70px;
+}
+#h2{
+    top:190px;
+    left:-110px;
+}
+#h3{
+    top:260px;
+    left:-70px;
+}
+#h4{
+    top:330px;
+    left:-110px;
+}
+#h5{
+    top:400px;
+    left:-70px;
+}
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+#h6{
+    top:190px;
+    right:-200px;
+}
+#h7{
+    top:330px;
+    right: -200px;
 }
 
 .hexagon {
-  width: 77px;
-  height: 44px;
+  width: 70px;
+  height: 40px;
   transform: translate(-50%,-50%);
   position: fixed;
+  background: black;
 }
 .hexagon::before,
 .hexagon::after {
@@ -26,9 +55,11 @@ html, body {
   position: absolute;
 }
 .hexagon::before {
+  background: black;
   transform: rotate(60deg);
 }
 .hexagon::after {
+  background: red;
   transform: rotate(120deg);
 }
 .hexagon,
@@ -36,14 +67,14 @@ html, body {
 .hexagon::before {
   background: var(--hexaColor);
   -webkit-transition: background 0.5s ease;
-  -moz-transition: background 0.5s ease ;
+  -moz-transition: background 0.5s ease;
   -ms-transition: background 0.5s ease;
   -o-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
 
 .hexagon:hover {
-  --hexaColor: #000000;
+  --hexaColor: #004400;
 }
 .hexagon:hover > .buttonName {
     color:white;
@@ -53,6 +84,19 @@ html, body {
     -o-transition: color 0.5s ease;
     transition: color 0.5s ease;
 }
+
+#active1.hexagon,
+#active1.hexagon::after,
+#active1.hexagon::before {
+  background: #00A800;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+
 .buttonName{
   position: absolute;
   z-index: 2;
@@ -60,4 +104,9 @@ html, body {
   top: 20px;
   left: 35px;
   transform: translate(-50%,-50%);
+}
+h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
 }
