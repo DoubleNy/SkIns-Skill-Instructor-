@@ -105,8 +105,8 @@
 @keyframes mymove {
   from {right: 0px;}
   to {right: 600px;}
-  30% {filter: blur(1px);}
-  60% {filter: blur(3px);}
+  //30% {filter: blur(1px);}
+  //60% {filter: blur(3px);}
 }
 
 

@@ -6,7 +6,7 @@
   --color5: #D1D1D1;
 }
 #navbar{
-  z-index: 1050;
+  z-index: 10;
   visibility: visible;
 }
 
@@ -35,10 +35,12 @@
 }
 
 #h6{
+    white-space: nowrap;
     top:190px;
     right:-200px;
 }
 #h7{
+    white-space: nowrap;
     top:330px;
     right: -200px;
 }
