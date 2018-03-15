@@ -1,4 +1,3 @@
-
 function setTemplate1() {
   document.documentElement.style.setProperty('--color1','var(--T1color1)');
   document.documentElement.style.setProperty('--color2','var(--T1color2)');
