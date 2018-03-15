@@ -112,7 +112,6 @@ li.dropdown {
   transition: opacity 0.5s ease-out;
 }
 
-
 /* Subtitluri */
 
 .subtitle {
@@ -123,6 +122,75 @@ li.dropdown {
   background-color: var(--color5);
   font-size: 20px;
   border-radius: 5%;
+}
+
+/* Videos */
+
+.container {
+  width: 84%;
+  margin: 0 auto;
+  background-color: var(--color5);
+  padding: 3%;
+  padding-top: 5%;
+}
+
+.videoContainer {
+  display: inline-block;
+  width: 210px;
+  height: 203px;
+  background-color: var(--color2);
+  margin: 20px;
+}
+
+.video {
+  width: 210px;
+  height: 117.5px;
+}
+
+.description {
+  width: 204px;
+  height: 79.5px;
+  color: var(--color5);
+  padding: 3px;
+}
+
+.descriptionTitle {
+  font-size: 15px;
+  color: var(--color1);
+}
+
+.views {
+  width: 20px;
+  height: 20px;
+  /*background-color: red;*/
+  position: relative;
+  left: -40%;
+  bottom: -40%;
+}
+
+.comments {
+  width: 20px;
+  height: 20px;
+  /*background-color: red;*/
+  position: relative;
+  left: calc(40% - 40px);
+  bottom: calc(-40% + 20px);
+}
+
+.viewsCount {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: calc(-40% + 20px);
+  bottom: calc(-40% + 40px);
+}
+
+.commentsCount {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: calc(40% - 20px);
+  bottom: calc(-40% + 60px);
 }
 
 /* Template colors footer */
