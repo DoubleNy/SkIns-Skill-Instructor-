@@ -1,11 +1,14 @@
 :root {
-  --hexaColor: #75FF63;
+  --hexaColor: #fed005;
   --color2: #004400;
   --color3: #00A800;
   --color4: #75FF63;
   --color5: #D1D1D1;
 }
-
+#navbar{
+  z-index: 1050;
+  visibility: visible;
+}
 
 #navbar .hexagon{
   opacity: 1;
@@ -55,11 +58,11 @@
   position: absolute;
 }
 .hexagon::before {
-  background: black;
+  background: var(--hexaColor);
   transform: rotate(60deg);
 }
 .hexagon::after {
-  background: red;
+  background: var(--hexaColor);
   transform: rotate(120deg);
 }
 .hexagon,
@@ -74,10 +77,10 @@
 }
 
 .hexagon:hover {
-  --hexaColor: #004400;
+  --hexaColor: #feef10;
 }
 .hexagon:hover > .buttonName {
-    color:white;
+    /*color:white;*/
     -webkit-transition: color 0.5s ease;
     -moz-transition: color 0.5s ease;
     -ms-transition: color 0.5s ease;
@@ -88,7 +91,7 @@
 #active1.hexagon,
 #active1.hexagon::after,
 #active1.hexagon::before {
-  background: #00A800;
+  background: #e3b40a;
   -webkit-transition: background 0.5s ease;
   -moz-transition: background 0.5s ease;
   -ms-transition: background 0.5s ease;
