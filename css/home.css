@@ -6,7 +6,6 @@
   --color5: #D1D1D1;
 }
 #navbar{
-  z-index: 10;
   visibility: visible;
 }
 
@@ -16,33 +15,40 @@
 #active1{
     top:120px;
     left:-70px;
+    z-index: 10;
 }
 #h2{
     top:190px;
     left:-110px;
+    z-index: 10;
 }
 #h3{
     top:260px;
     left:-70px;
+    z-index: 10;
 }
 #h4{
     top:330px;
     left:-110px;
+    z-index: 10;
 }
 #h5{
     top:400px;
     left:-70px;
+    z-index: 10;
 }
 
 #h6{
     white-space: nowrap;
     top:190px;
     right:-200px;
+    z-index: 10;
 }
 #h7{
     white-space: nowrap;
     top:330px;
     right: -200px;
+    z-index: 10;
 }
 
 .hexagon {
