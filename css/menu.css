@@ -1,3 +1,18 @@
+.twitterBird{
+	float:left;
+
+	background-image: :url("twitterBird.png");
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+	cursor:pointer;
+  display: inline-block;
+  position: relative;
+}
+
 #imageSlider {
   height: 80%;
   background-image: url("../images/wallpaper.jpg");
@@ -9,25 +24,21 @@
 
 .footer-class{
     position: relative;
-    height:416px;
+    height: 300px;
 }
 .div1{
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.div2{
-    margin-bottom: 96px;
-    margin-top:40px;
-}
 .footer-distributed {
   position: absolute;
+  height: 150px;
   right: 0;
   bottom: 0;
   left: 0;
-  /*padding: 1rem;*/
-  padding: 98px 0 45px;
+  padding: 70px 0 45px;
   background-color: #292c2f;
   text-align: left;
   font: bold 16px sans-serif;
@@ -49,23 +60,11 @@
 .footer-distributed .footer-right{
   display: inline-block;
   vertical-align: top;
-  padding: 0;
-  margin: 0;
 }
-h3{
-  display: block;
 
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-
-}
 .footer-left h3{
   color: #ffffff;
   font: normal 30px 'Cookie', cursive;
-  margin: 0;
-  padding: 0;
 }
 
 .footer-left h3 span{
@@ -76,35 +75,21 @@ h3{
   font: 14px/20px sharp_sans_no1bold, sans-serif;
   display: block;
   margin-bottom: 29px;
-  text-transform: capitalize;
   color: #fed005;
-  box-sizing: border-box;
 }
-adress{
-  font-size: 14px;
-  line-height: 24px;
-  padding-top: 0;
-  font-style: normal;
-  padding: 0;
-  vertical-align: baseline;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  font: 12px/22px sharp_sans_no1regular, sans-serif;
-  -webkit-appearance: none;
-  box-sizing: border-box;
-  margin: 0;
-}
-.footer_social{
 
+adress{
+  font-size: 12px;
+  line-height: 24px;
+  font-style: normal;
+  color: #fff;
 }
+
 
 .container1 {
     top:20px;
     left:30px;
     position:fixed;
-    /*right: 1340px;*/
     display: inline-block;
     cursor: pointer;
 }
