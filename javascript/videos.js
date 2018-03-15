@@ -1,3 +1,13 @@
+var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {
+    $('video', this).get(0).play();
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause();
+}
+
 window.onscroll = function(){revealVideos()};
 
 var contentCells = document.getElementsByClassName("contentCell");
@@ -5,7 +15,8 @@ var contentCells = document.getElementsByClassName("contentCell");
 function revealVideos() {
   var i;
   for (i = 0; i < contentCells.length; i++) {
-    if((window.pageYOffset + window.innerHeight/2 >= contentCells[i].offsetTop) && (window.pageYOffset + window.innerHeight/2 <= contentCells[i].offsetTop + 350)) {
+    if((window.pageYOffset + window.innerHeight/2 >= contentCells[i].offsetTop)
+    && (window.pageYOffset + window.innerHeight/2 <= contentCells[i].offsetTop + 350)) {
       contentCells[i].style.opacity = "1";
       contentCells[i].style.filter="blur(0px)";
 

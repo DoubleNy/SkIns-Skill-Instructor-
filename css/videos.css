@@ -1,7 +1,7 @@
 :root {
   --color1: #000000; /* culoarea textului, culoarea bordurilor, text-shadow */
   --color2: #aaaaaa; /*  */
-  --color3: #ff6100; /* culoarea fundal la selectarea categoriilor */
+  --color3: #303030; /* culoarea fundal la selectarea categoriilor */
   --color4: #ffffff; /* textul din descrierea video-urilor */
   --color5: #ededed; /* culoarea de fundal a body-ului */
   --color6: #d1d1d1; /* fundal la subtitlu */
@@ -10,7 +10,7 @@
 
   --T1color1: #000000;
   --T1color2: #aaaaaa;
-  --T1color3: #ff6100;
+  --T1color3: #303030;
   --T1color4: #ffffff;
   --T1color5: #ededed;
   --T1color6: #d1d1d1;
@@ -57,9 +57,9 @@ body, html {
   text-align: center;
   list-style-type: none;
   overflow: hidden;
-  background-color: var(--color5);
-  border-top: 2px solid var(--color1);
-  border-bottom: 1px solid var(--color1);
+  background: linear-gradient(to bottom right, var(--color7), var(--color8));
+  /*border-top: 2px solid var(--color1);
+  border-bottom: 1px solid var(--color1);*/
   margin-bottom: 100px;
 }
 
@@ -72,12 +72,12 @@ body, html {
   display: block;
   padding: 20px 15px;
   text-decoration: none;
-  color: var(--color1);
+  color: var(--color4);
   font-size: 20px;
 }
 
 .dropdown:hover .dropdownButton {
-  background-color: var(--color3);
+  background-color: var(--color6);
   transition: background-color 1s;
 }
 
@@ -90,7 +90,7 @@ li.dropdown {
   opacity: 0;
   display: block;
   position: absolute;
-  background-color: var(--color5);
+  background-color: var(--color3);
   width: 150px;
   z-index: 1;
   border-bottom: 1px solid var(--color1);
@@ -105,7 +105,7 @@ li.dropdown {
 }
 
 .dropdownContent a:hover {
-  background-color: var(--color3);
+  background-color: var(--color6);
 }
 
 .dropdown:hover .dropdownContent {
@@ -151,7 +151,7 @@ li.dropdown {
   float: right;
 }
 
-.cellVideo iframe {
+.video {
   height: 100%;
   width: 100%;
 }
