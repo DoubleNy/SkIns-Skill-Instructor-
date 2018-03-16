@@ -56,60 +56,73 @@ body, html {
 
 
 /* "Navbar" cu categoriile destinate utilizatorului */
-#categories {
-  text-align: center;
-  list-style-type: none;
-  overflow: hidden;
+
+.navbar {
+  position:fixed;
+  width:100%;
+  z-index:1;
+  top: 0;
   background-color: var(--color5);
-  /*border-top: 2px solid var(--color1);
-  border-bottom: 1px solid var(--color1);*/
-  margin-bottom: 100px;
-}
-
-#categories li {
-  float: center;
-
-}
-
-#categories li a, .dropdownButton {
-  display: block;
-  padding: 20px 15px;
-  text-decoration: none;
   color: var(--color2);
-  font-size: 20px;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  text-align: center;
+}
+.dropdown-hover {
+  display:inline-block;
+  cursor:pointer;
+  float:center;
+}
+.button {
+  padding:12px 24px!important;
+  border:none;
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:normal;
 }
 
-li.dropdown {
-  display: inline-block;
+.dropdown-hover:hover .dropdown-content {
+  display:block;
 }
-
-.dropdownContent {
-  visibility: hidden;
-  opacity: 0;
-  display: block;
-  position: absolute;
+.dropdown-content {
+  cursor:auto;
+  color:var(--color5);
+  background-color:var(--color2);
+  display:none;
+  position:absolute;
+  width:100px;
+  margin:0;
+  padding:0;
+  z-index:1;
+}
+.bar-item {
+  transition: color 1s, background-color 1s;
+  padding:8px 16px;
+  float:center;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  text-align: center;
+}
+.bar-block .bar-item {
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  border:none;
+  white-space:normal;
+  float:none;
+  outline:0;
+}
+.bar-item:hover {
+  color: var(--color2);
   background-color: var(--color5);
-  width: 150px;
-  z-index: 1;
-  /*border-bottom: 1px solid var(--color1);*/
-}
-
-.dropdownContent a {
-  text-decoration: none;
-  display: block;
-  /*border-left: 1px solid var(--color1);
-  border-right: 1px solid var(--color1);
-  */transition: background-color 0.5s;
-}
-
-.dropdownContent a:hover {
-  background-color: var(--color3);
-}
-
-.dropdown:hover .dropdownContent {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease-out;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 /* Subtitluri */
@@ -118,7 +131,7 @@ li.dropdown {
   text-align: center;
   color: var(--color2);
   padding: 50px 0px;
-  margin-bottom: 40px;
+  margin: 40px 0;;
   background-color: var(--color5);
   font-size: 20px;
   border-radius: 5%;
