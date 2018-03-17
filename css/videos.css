@@ -55,7 +55,7 @@ body, html {
 }
 
 
-/* "Navbar" cu categoriile destinate utilizatorului */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Navbar-ul  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .navbar {
   position:fixed;
@@ -130,7 +130,7 @@ body, html {
   -webkit-transition: color 0.3s, background-color 0.3s;
 }
 
-/* Subtitluri */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Subtitluri ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .subtitle {
   text-align: center;
@@ -142,7 +142,7 @@ body, html {
   border-radius: 5%;
 }
 
-/* Videos */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Video Container  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .container {
   width: 84%;
@@ -234,7 +234,7 @@ body, html {
   bottom: calc(-40% + 60px);
 }
 
-/* Template colors footer */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Template colors footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #templateColors {
   position: fixed;
   bottom: 0;
@@ -280,7 +280,7 @@ body, html {
   background: linear-gradient(to bottom right,var(--T4color1),var(--T4color2),var(--T4color3),var(--T4color4),var(--T4color5));
 }
 
-/* Customize scrollbar */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Customize scrollbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 ::-webkit-scrollbar {
   width: 12px;
