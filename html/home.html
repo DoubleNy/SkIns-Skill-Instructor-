@@ -8,13 +8,54 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
     <script src="../javascript/home.js"></script>
+    <script src="../javascript/slideshow.js"></script>
 
 
   </head>
 
   <body id = "body">
-      <div id="imageSlider"></div>
+
+      <div class="slideshow_Container">
+
+            <div class="slide first" style="background-image:url(../images/Slider1.jpeg)">
+              <!--  <img src="../images/Slider1.jpeg" style="width:100%">-->
+            </div>
+
+            <div class="slide" style="background-image:url(../images/Slider2.jpeg)">
+              <!--  <img src="../images/Slider2.jpeg" style="width:100%">-->
+            </div>
+
+            <div class="slide" style="background-image:url(../images/Slider3.jpeg)">
+              <!--  <img src="../images/Slider3.jpeg" style="width:100%">-->
+            </div>
+
+            <div class="slide" style="background-image:url(../images/Slider4.jpeg)">
+              <!--  <img src="../images/Slider4.jpeg" style="width:100%">-->
+            </div>
+
+            <div class="slide" style="background-image:url(../images/Slider5.jpg)">
+              <!--  <img src="../images/Slider5.jpg" style="width:100%"> -->
+            </div>
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+
+            <div class="cos_Logo">Skill <span>Instructor</span></div>
+
+      </div>
+      <div class="garbage_Text">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet leo non dui bibendum varius eget id lorem. Pellentesque nunc arcu, vulputate a vestibulum ac, placerat ut nibh. Integer bibendum erat a erat interdum blandit. Aliquam vel cursus velit. Phasellus mi felis, finibus nec lacinia et, sagittis ut mi. Maecenas maximus pulvinar libero, ut cursus lorem. Vestibulum consectetur tortor odio, sed tempor nunc pulvinar id. Fusce sapien dui, maximus vel est id, placerat consectetur diam. Phasellus accumsan, sem sit amet vestibulum tempor, nisi mi tincidunt felis, at efficitur sem tellus nec ante. Ut in dictum urna, eget commodo erat. Integer suscipit, odio vitae maximus vulputate, odio nisl sagittis ligula, a pharetra nibh quam bibendum nibh. Duis mattis risus est, at molestie elit bibendum laoreet. Sed finibus, nunc fermentum rhoncus feugiat, tortor augue blandit lorem, eu dapibus turpis sapien quis dolor. Quisque tincidunt eros quam, tincidunt aliquam erat gravida congue.
 
@@ -42,6 +83,7 @@
 
        Proin finibus feugiat purus, eget luctus nibh. Suspendisse magna purus, finibus quis nisi eget, ornare tincidunt purus. Nunc eu congue odio, ut vulputate orci. Donec at ligula euismod odio placerat posuere. Mauris rhoncus sagittis tellus, ac rutrum ante molestie sit amet. Donec vitae nisl quis mi commodo pellentesque. Proin venenatis ipsum elementum, tincidunt orci eget, lacinia magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tristique faucibus ex nec auctor. Integer luctus neque eget nisi gravida viverra. Phasellus ultrices pharetra neque, at imperdiet lorem lobortis vel. Duis et dui lacinia, ornare lectus sit amet, tempus ante. Ut dolor nunc, bibendum at scelerisque vel, finibus nec nulla. Nam facilisis velit sem, eget maximus magna lobortis et.
       </p>
+    </div>
       <!--<div class="icon_meniu"> -->
           <div onclick="myFunction(this)" class="container1" >
               <div class="bar1"></div>
@@ -90,18 +132,38 @@
                           </h3>
                       </div>
                       <div class="footer-center">
-                          <strong class="title">Romania</strong>
-                                <address>
-                                     Adresa.
-                                </adress>
-                      </div>
-                      <div class="footer-right">
-                          <strong class="title">Follow us</strong>
-                          <ul class="social-bar" style="list-style-type:none">
-                              <li> <a href="facebook.com" class="fa fa-facebook"> </a> </li>
-                              <li> </li>
+                          <ul class="lista-contact">
+                              <li class="call">
+                                <p class="c1">Call:</p>
+                                <p class="c2">+0759023027</p>
+                              </li>
+                              <li class="skype">
+                                <p class="c1">Skype:</p>
+                                <p class="c2">blablabla</p>
+                              </li>
+                              <li class="write">
+                                <p class="c1">Write:</p>
+                                <p class="c2">student@info.uaic.ro</p>
+                              </li>
+                              <!--<li class="adress">
+                                <p class="c1">Adress:</p>
+                                <p class="c2">General Berthelot, 16, IASI 700483, ROMANIA</p>
+                              </li>-->
+
                           </ul>
                       </div>
+                      <div class="footer-right">
+                          <strong class="title" style="text-align:center">Stay conected</strong>
+                          <ul class="social-bar" style="list-style-type:none">
+                              <li> <a href="facebook.com" class="fa fa-facebook"> </a> </li>
+                              <li> <a href="https://www.instagram.com" class="fa fa-instagram"> </a></li>
+                              <li> <a href="https://www.twitter.com" class="fa fa-twitter"> </a></li>
+                              <li> <a href="https://github.com/DoubleNy/SkIns-Skill-Instructor" class="fa fa-github"> </a></li>
+                          </ul>
+                      </div>
+              </div>
+              <div class="copyright">
+                  &copy; 2018, Skill Instructor. All rights reserved.
               </div>
           </footer>
       </div>

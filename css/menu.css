@@ -1,17 +1,74 @@
-.twitterBird{
-	float:left;
-
-	background-image: :url("twitterBird.png");
-  background-color: transparent;
-  border: none;
-  width: 32px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-position: center center;
-	cursor:pointer;
-  display: inline-block;
-  position: relative;
+.social-bar li{
+		display: inline;
 }
+
+.social-bar [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 30px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+		text-decoration: none;
+}
+a:visited{
+		background-color: #333;
+}
+
+a.fa.fa-facebook:hover,
+a.fa.fa-instagram:hover,
+a.fa.fa-twitter:hover,
+a.fa.fa-github:hover{
+		background-color: #fed005;
+		color:black;
+}
+
+.copyright{
+		position: relative;
+		bottom:0;
+		height: 30px;
+		background-color: #23262a;
+		color: #707b80;
+		font-size: 13px;
+		padding-top: 20px;
+		padding-left: 30px;
+		font-weight: normal;
+}
+.lista-contact{
+		list-style-type:none;
+
+		float:left;
+}
+
+.c1{
+		font-weight: 100;
+		color: #707b80;
+		font-size: 15px;
+		text-decoration: none;
+}
+.c2{
+		font-weight: 100;
+		color: white;
+		font-size: 15px;
+		margin-top: -7px;
+}
+.call{
+		float:left;
+		padding-right: 55px;
+}
+.skype{
+		float: left;
+		margin-top: -3px;
+}
+.write{
+		clear: left;
+		padding-right: 55px;
+}
+.adress{
+	float: left;
+}
+
 
 #imageSlider {
   height: 80%;
@@ -38,18 +95,17 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 70px 0 45px;
+  padding: 30px 0 15px;
   background-color: #292c2f;
   text-align: left;
   font: bold 16px sans-serif;
 }
 .footer-distributed .footer-left{
-    width:40%;
+    width:30%;
 
 }
 .footer-distributed .footer-center{
-    width:35%;
-
+    width:45%;
 }
 .footer-distributed .footer-right{
     width:20%;
@@ -78,12 +134,6 @@
   color: #fed005;
 }
 
-adress{
-  font-size: 12px;
-  line-height: 24px;
-  font-style: normal;
-  color: #fff;
-}
 
 
 .container1 {

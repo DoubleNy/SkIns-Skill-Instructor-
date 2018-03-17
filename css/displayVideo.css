@@ -1,0 +1,107 @@
+:root {
+  --color1: #000000; /* culoare text negru */
+  --color2: #ffffff; /* culoare text alb */
+  --color3: #fed005; /* culoare principala */
+  --color4: #d1d1d1; /* gri deschis */
+  --color5: #292c2f; /* gri inchis */
+
+  --T1color1: #000000;
+  --T1color2: #ffffff;
+  --T1color3: #fed005;
+  --T1color4: #d1d1d1;
+  --T1color5: #292c2f;
+
+  --T2color1: #000000;
+  --T2color2: #ffffff;
+  --T2color3: #ff6e00;
+  --T2color4: #d1d1d1;
+  --T2color5: #292c2f;
+
+  --T3color1: #000000;
+  --T3color2: #ffffff;
+  --T3color3: #46dd00;
+  --T3color4: #d1d1d1;
+  --T3color5: #292c2f;
+
+  --T4color1: #000000;
+  --T4color2: #ffffff;
+  --T4color3: #00b8bf;
+  --T4color4: #d1d1d1;
+  --T4color5: #292c2f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color5);
+  font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: var(--color2);
+}
+
+.video {
+  width:854px;
+  height:480px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+
+/* Template colors footer */
+#templateColors {
+  position: fixed;
+  bottom: 0;
+  left: -160px;
+  width: 190px;
+  height: 40px;
+  border-radius: 0 50px 0 0;
+  background-color: black;
+  opacity: 0.15;
+  padding-left: 10px;
+  transition: opacity 1s ease-in, left 1s;
+}
+
+#templateColors:hover {
+  opacity: 1;
+  left: 0px;
+  transition: opacity 1s ease-in, left 1s;
+}
+
+#templateColors a {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  background-color: white;
+  display: inline-block;
+}
+
+#template1 {
+  background: linear-gradient(to bottom right,var(--T1color1),var(--T1color2),var(--T1color3),var(--T1color4),var(--T1color5));
+}
+
+#template2 {
+  background: linear-gradient(to bottom right,var(--T2color1),var(--T2color2),var(--T2color3),var(--T2color4),var(--T2color5));
+}
+
+#template3 {
+  background: linear-gradient(to bottom right,var(--T3color1),var(--T3color2),var(--T3color3),var(--T3color4),var(--T3color5));
+}
+
+#template4 {
+  background: linear-gradient(to bottom right,var(--T4color1),var(--T4color2),var(--T4color3),var(--T4color4),var(--T4color5));
+}
+
+/* Customize scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#CDD9DA,var(--color3),#CDD9DA);
+}

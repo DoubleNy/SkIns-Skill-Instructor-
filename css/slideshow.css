@@ -1,0 +1,86 @@
+body{
+    margin:0%;
+}
+
+.slideshow_Container{
+
+  position: relative;
+  margin: auto;;
+}
+.slide{
+
+    display: none;
+    height:75%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first{
+  display: block !important;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  padding:16px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius:50%;
+}
+
+.prev{
+  left:2%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.next{
+  right: 2%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.prev:hover, .next:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+.dots{
+  position: absolute;
+  width: 100%;
+  bottom:5%;
+  text-align: center;
+
+}
+.dot{
+
+  cursor: pointer;
+  bottom: 10%;
+  width:15px;
+  height:15px;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 50%;
+  margin: 5px;
+  display:inline-block;
+
+}
+.dot:hover, .active{
+  background-color: white;
+}
+.garbage_Text{
+    padding-top:15px;
+    padding-left:25%;
+    padding-right:25%;
+
+}
+
+.cos_Logo {
+  text-align: center;
+  width:100%;
+  top:25%;
+  color: #ffffff;
+  position:absolute;
+  font-size:60px;
+}
+.cos_Logo span{
+  color: #fed005;
+}
