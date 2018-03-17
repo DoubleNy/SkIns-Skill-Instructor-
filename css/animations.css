@@ -1,4 +1,4 @@
-
+//login animation
 #pop h3{
     white-space: nowrap;
 }
@@ -99,14 +99,12 @@
   height: 100px;
   position: absolute;
   top: 200px;
-  animation: mymove 1s ease forwards;
+  animation: mymove 1.5s ease forwards;
 }
 
 @keyframes mymove {
   from {right: 0px;}
   to {right: 600px;}
-  //30% {filter: blur(1px);}
-  //60% {filter: blur(3px);}
 }
 
 
@@ -164,6 +162,13 @@
 @keyframes mymove2 {
     from {right: 600px;}
     to {right: -100px;}
-    30% {filter: blur(1px);}
-    60% {filter: blur(3px);}
+}
+//sign up animation
+
+#signUP {
+    position: absolute;
+    top: auto;
+    left: auto;
+    display: block;
+
 }
