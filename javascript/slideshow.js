@@ -14,6 +14,11 @@ function currentSlide(n) {
 
 function showSlides(n) {
 
+  var first=document.getElementsByClassName("first");
+  if(first.length>0)
+  {
+    first[0].className="slide";
+  }
   var slides = document.getElementsByClassName("slide");
   var dots=document.getElementsByClassName("dot");
 
