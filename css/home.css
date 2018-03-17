@@ -5,6 +5,12 @@
   --color4: #75FF63;
   --color5: #D1D1D1;
 }
+
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #navbar{
   visibility: visible;
 }

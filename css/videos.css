@@ -85,6 +85,9 @@ body, html {
   cursor:pointer;
   white-space:normal;
 }
+.button:hover {
+  background-color: var(--color3);
+}
 
 .dropdown-hover:hover .dropdown-content {
   display:block;
@@ -121,7 +124,7 @@ body, html {
 }
 .bar-item:hover {
   color: var(--color2);
-  background-color: var(--color5);
+  background-color: var(--color3);
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -142,6 +145,7 @@ body, html {
 .container {
   width: 84%;
   margin: 0 auto;
+  margin-bottom: 40px;
   background-color: var(--color5);
   padding: 3%;
   padding-top: 5%;
@@ -153,11 +157,33 @@ body, html {
   height: 203px;
   background-color: var(--color2);
   margin: 20px;
+  cursor: pointer;
 }
 
 .video {
   width: 210px;
   height: 117.5px;
+}
+
+.video i {
+  transform: translateY(-80px);
+  font-size:40px;
+  color:white;
+  display: none;
+}
+
+.video img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.videoContainer:hover .video i {
+  display: inline-block;
+}
+.videoContainer:hover .video img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .description {
@@ -248,4 +274,13 @@ body, html {
 
 #template4 {
   background: linear-gradient(to bottom right,var(--T4color1),var(--T4color2),var(--T4color3),var(--T4color4),var(--T4color5));
+}
+
+/* Customize scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#CDD9DA,var(--color3),#CDD9DA);
 }
