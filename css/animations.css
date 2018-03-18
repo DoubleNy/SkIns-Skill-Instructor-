@@ -1,3 +1,4 @@
+
 //login animation
 #pop h3{
     white-space: nowrap;
@@ -47,72 +48,29 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 200px;
+  top: 450px;
   right: -100px;
 }
-
-.pop-up-forward h3{
-    white-space: nowrap;
-}
-
-.pop-up-forward input{
-  margin: 5px;
-  padding: 8px;
-  border: 0;
-  border-radius: 8px 0 0 8px;
-  border: 1px solid #333;
-  font-size: 18px;
-}
-.pop-up-forward button{
-  position: relative;
-  left : 100px;
-  top: 30px;
-  padding: 6px;
-  border: 0;
-  color: #fff;
-  background: #333;
-  margin-left: -5px;
-  margin-left: -5px;
-  border-radius: 0 10px 10px 0;
-  border: 1px solid #333;
-  font-size: 18px;
-}
-
-
-.pop-up-forward i {
-  position: relative;
-  left: 250px;
-  bottom: 150px;
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.pop-up-forward .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-
 .pop-up-forward{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 200px;
-  animation: mymove 1.5s ease forwards;
+  animation: front 1.5s ease forwards;
 }
 
-@keyframes mymove {
+@keyframes front {
   from {right: 0px;}
   to {right: 600px;}
 }
 
-
-.pop-up-backward h3{
-    white-space: nowrap;
+.pop-up-backward{
+  animation: back  1s ease forwards;
 }
 
-.pop-up-backard input{
+@keyframes back {
+    from {right: 600px;}
+    to {right: -100px;}
+}
+
+//sign up animation
+#signUP input{
   margin: 5px;
   padding: 8px;
   border: 0;
@@ -120,7 +78,7 @@
   border: 1px solid #333;
   font-size: 18px;
 }
-.pop-up-backward button{
+#signUP button{
   position: relative;
   left : 100px;
   top: 30px;
@@ -136,39 +94,61 @@
 }
 
 
-.pop-up-backward i {
+#signUP i {
   position: relative;
   left: 250px;
-  bottom: 150px;
+  bottom: 200px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
 }
 
-.pop-up-backward .right {
+#signUP .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
-.pop-up-backward{
+#signUP {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 200px;
-  animation: mymove2  1s ease forwards;
+  top: 450px;
+  right: -100px;
 }
 
-@keyframes mymove2 {
+.sign-up-forward input{
+  margin: 5px;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+.sign-up-forward{
+  animation: front2 1.5s ease forwards;
+}
+
+@keyframes front2 {
+  from {right: 0px;}
+  to {right: 600px;}
+}
+
+.sign-up-backward{
+  animation: back2  1s ease forwards;
+}
+
+.sign-up-backward input{
+  margin: 5px;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+@keyframes back2 {
     from {right: 600px;}
     to {right: -100px;}
-}
-//sign up animation
-
-#signUP {
-    position: absolute;
-    top: auto;
-    left: auto;
-    display: block;
-
 }
