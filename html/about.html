@@ -1,0 +1,268 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <script src="../javascript/home.js"></script>
+  <script src="../javascript/slideshow.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+<body>
+        <div class="slideshow_Container">
+
+              <div class="slide first" style="background-image:url(../images/Slider1.jpeg)">
+                <!--  <img src="../images/Slider1.jpeg" style="width:100%">-->
+              </div>
+
+              <div class="slide" style="background-image:url(../images/Slider2.jpeg)">
+                <!--  <img src="../images/Slider2.jpeg" style="width:100%">-->
+              </div>
+
+              <div class="slide" style="background-image:url(../images/Slider3.jpeg)">
+                <!--  <img src="../images/Slider3.jpeg" style="width:100%">-->
+              </div>
+
+              <div class="slide" style="background-image:url(../images/Slider4.jpeg)">
+                <!--  <img src="../images/Slider4.jpeg" style="width:100%">-->
+              </div>
+
+              <div class="slide" style="background-image:url(../images/Slider5.jpg)">
+                <!--  <img src="../images/Slider5.jpg" style="width:100%"> -->
+              </div>
+
+
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="dots">
+                  <span class="dot active" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+              <div class="cos_Logo">Skill <span>Instructor</span></div>
+
+        </div>
+
+        <!--<div class="icon_meniu"> -->
+            <div onclick="myFunction(this)" class="container1" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+
+              <div id="navbar" class="slide-right" >
+                <a href="home.html"><div id="active1" class="hexagon"><div class="buttonName"><h5>Home</h5></div></div></a>
+                <a href="about.html"><div class="hexagon" id="h2"><div class="buttonName"><h5>About</h5></div></div></a>
+                <a href="videos.html"><div class="hexagon" id="h3"><div class="buttonName"><h5>Videos</h5></div></div></a>
+                <div class="hexagon" id="h4"><div class="buttonName"><h5>Docs</h5></div></div>
+                <a href="contact.html"><div class="hexagon" id="h5"><div class="buttonName"><h5>Contact</h5></div></div></a>
+                <div onclick="addPop()" class="hexagon" id="h6"><div class="buttonName"><h5>Log in</h5></div></div>
+                <div onclick="addSign()" class="hexagon" id="h7"><div class="buttonName"><h5>Sign up</h5></div></div>
+
+              </div>
+              <!-- Logare -->
+              <div id="pop">
+                  <div class="container">
+                      <input type="username" placeholder="Username">
+                      <input type="password" placeholder="Password">
+                      <button>Login</button>
+                      <i onclick="addPop()" class="right"></i>
+                  </div>
+              </div>
+              <!--Sign up -->
+              <div id="signUP">
+                  <div class="container">
+                      <input type="username" placeholder="Username">
+                      <input type="password" placeholder="Password">
+                      <input type="email@something.dot" placeholder="email">
+                      <button>Sign UP</button>
+                      <i onclick="addSign()" class="right"></i>
+                  </div>
+              </div>
+
+              <!--
+            <ul class="infoList">
+                <li id="cosmin">
+                  <figure><img src="../images/lion.jpg" /> </figure>
+                </li>
+
+                <li id="andreea">
+                  <figure><img src="../images/wolf.jpg" /> </figure>
+                </li>
+
+                <li id="cristi">
+                  <figure><img src="../images/eagle.jpg" /> </figure>
+                </li>
+
+                <li id="dani">
+                  <figure><img src="../images/tiger.jpg" /> </figure>
+                </li>
+            </ul>
+          -->
+          <ul class="infoList">
+            <li id="cosmin">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                    <div class="front">
+                      <figure><img src="../images/lion.jpg" /> </figure>
+                    </div>
+                    <div class="back">
+                      <figure>
+                        <div class="nume">
+                            <b>Cosmin Stefan :)</b>
+                        </div>
+                        <div class="text">
+                            <ul class="social-bar" style="list-style-type:none">
+                                <li> <a href="facebook.com" class="fa fa-facebook"> </a> </li>
+                                <li> <a href="https://www.instagram.com" class="fa fa-instagram"> </a></li>
+                                <li> <a href="https://www.twitter.com" class="fa fa-twitter"> </a></li>
+                                <li> <a href="https://github.com/DoubleNy/SkIns-Skill-Instructor" class="fa fa-github"> </a></li>
+                            </ul>
+                        </div>
+                        <img src="../images/lion.jpg" />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li id="andreea">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                    <div class="front">
+                      <figure><img src="../images/wolf.jpg" /> </figure>
+                    </div>
+                    <div class="back">
+                      <figure>
+                        <div class="nume">
+                            <b>Sustac Andreea :)</b>
+                        </div>
+                        <div class="text">
+                            <ul class="social-bar" style="list-style-type:none">
+                                <li> <a href="facebook.com" class="fa fa-facebook"> </a> </li>
+                                <li> <a href="https://www.instagram.com" class="fa fa-instagram"> </a></li>
+                                <li> <a href="https://www.twitter.com" class="fa fa-twitter"> </a></li>
+                                <li> <a href="https://github.com/DoubleNy/SkIns-Skill-Instructor" class="fa fa-github"> </a></li>
+                            </ul>
+                        </div>
+                        <img src="../images/wolf.jpg" />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li id="cristi">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                    <div class="front">
+                      <figure><img src="../images/eagle.jpg" /> </figure>
+                    </div>
+                    <div class="back">
+                      <figure>
+                        <div class="nume">
+                            <b>Ninicu Cristian :)</b>
+                        </div>
+                        <div class="text">
+                            <ul class="social-bar" style="list-style-type:none">
+                                <li> <a href="facebook.com" class="fa fa-facebook"> </a> </li>
+                                <li> <a href="https://www.instagram.com" class="fa fa-instagram"> </a></li>
+                                <li> <a href="https://www.twitter.com" class="fa fa-twitter"> </a></li>
+                                <li> <a href="https://github.com/DoubleNy/SkIns-Skill-Instructor" class="fa fa-github"> </a></li>
+                            </ul>
+                        </div>
+                        <img src="../images/eagle.jpg" />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li id="dani">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                    <div class="front">
+                      <figure><img src="../images/tiger.jpg" /> </figure>
+                    </div>
+                    <div class="back">
+                      <figure>
+                        <div class="nume">
+                            <b>Marian Alexandru :)</b>
+                        </div>
+                        <div class="text">
+                            <ul class="social-bar" style="list-style-type:none">
+                                <li> <a href="facebook.com" class="fa fa-facebook"> </a> </li>
+                                <li> <a href="https://www.instagram.com" class="fa fa-instagram"> </a></li>
+                                <li> <a href="https://www.twitter.com" class="fa fa-twitter"> </a></li>
+                                <li> <a href="https://github.com/DoubleNy/SkIns-Skill-Instructor" class="fa fa-github"> </a></li>
+                            </ul>
+                        </div>
+                        <img src="../images/tiger.jpg" />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+            </li>
+
+
+          </ul>
+
+
+            <div class="footer-class">
+                <footer class="footer-distributed">
+                    <div class="div1">
+                            <div class="footer-left">
+                                <h3>Sk<span>Ins</span>
+                                </h3>
+                            </div>
+                            <div class="footer-center">
+                                <ul class="lista-contact1">
+                                    <li class="call">
+                                      <p class="c1">Call:</p>
+                                      <p class="c2">+0759023027</p>
+                                    </li>
+                                    <li class="skype">
+                                      <p class="c1">Skype:</p>
+                                      <p class="c2">blablabla</p>
+                                    </li>
+                                </ul>
+                                <ul class="lista-contact2">
+                                    <li class="write">
+                                      <p class="c1">Write:</p>
+                                      <p class="c2">student@info.uaic.ro</p>
+                                    </li>
+                                    <li class="adress">
+                                      <p class="c1">Adress:</p>
+                                      <p class="c2">General Berthelot, 16,<br> IASI 700483, ROMANIA</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="footer-right">
+                                <strong class="title" style="text-align:center">Stay conected</strong>
+                                <ul class="social-bar" style="list-style-type:none">
+                                    <li> <a href="facebook.com" class="fa fa-facebook"> </a> </li>
+                                    <li> <a href="https://www.instagram.com" class="fa fa-instagram"> </a></li>
+                                    <li> <a href="https://www.twitter.com" class="fa fa-twitter"> </a></li>
+                                    <li> <a href="https://github.com/DoubleNy/SkIns-Skill-Instructor" class="fa fa-github"> </a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2018, Skill Instructor. All rights reserved.
+                    </div>
+                </footer>
+            </div>
+            <script src="../javascript/slideshow.js"></script>
+</body>
+</html>
