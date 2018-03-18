@@ -1,6 +1,7 @@
 <html>
 
   <head>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -10,11 +11,10 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/slideshow.css">
     <script src="../javascript/home.js"></script>
-<<<<<<< HEAD
-=======
     <script src="../javascript/slideshow.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
->>>>>>> 7ffd14625619fbd57a5fe77343785ace130049db
+    <link rel="stylesheet" href="../css/contact.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
 
 
   </head>
@@ -55,11 +55,53 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
                 <span class="dot" onclick="currentSlide(5)"></span>
             </div>
+
             <div class="cos_Logo">Skill <span>Instructor</span></div>
 
       </div>
-      <div class="garbage_Text">
+
+
+
+      <div class="contact_Container">
+          <div class="contact_Title_Div"><span class="contact_Title_Span">Contact Us</span></div>
+
+          <div class="contact_Content_Div">
+              <div class="cos_50per" id="adresa">
+              <h3><span>Adresa</span></h3>
+              <p>Pentru mai multe detalii ne gasiti la:</p>
+              <p><i class="fa fa-map-marker ico"></i>  Iasi, Ro</p>
+              <p><i class="fa fa-phone ico" ></i> +40743897488</p>
+              <p><i class="fa fa-envelope-o ico"></i>skins@example.com</p>
+
+              </div>
+              <div class="cos_50per" id="map"></div>
+
+              <div class="cos_100per">
+                    <form class="cos_form">
+                      <div class="cos_form_row">
+                          <label class="cos_label">Name</label>
+                          <input class="cos_input" type="text" name="Name" required>
+                      </div>
+                      <div class="cos_form_row">
+                          <label class="cos_label">Email</label>
+                          <input class="cos_input" type="text" name="Email" required>
+                      </div>
+                      <div class="cos_form_row">
+                            <label class="cos_label">Message</label>
+                            <input class="cos_input" type="text" name="Message" required>
+                      </div>
+                      <div>
+                        <button class="cos_send_button" type="submit">Send</button>
+                      </div>
+                    </form>
+              </div>
           </div>
+      </div>
+
+
+
+
+
       <!--<div class="icon_meniu"> -->
           <div onclick="myFunction(this)" class="container1" >
               <div class="bar1"></div>
@@ -75,7 +117,7 @@
         <div class="hexagon" id="h4"><div class="buttonName"><h5>Docs</h5></div></div>
         <a href="contact.html"><div class="hexagon" id="h5"><div class="buttonName"><h5>Contact</h5></div></div></a>
         <div onclick="addPop()" class="hexagon" id="h6"><div class="buttonName"><h5>Log in</h5></div></div>
-        <div onclick="addSign()" class="hexagon" id="h7"><div class="buttonName"><h5>Sign up</h5></div></div>
+        <div class="hexagon" id="h7"><div class="buttonName"><h5>Sign up</h5></div></div>
 
       </div>
       <!-- Logare -->
@@ -95,39 +137,10 @@
                     <input type="password" placeholder="Password">
                     <input type="email@something.dot" placeholder="email">
                     <button>Sign UP</button>
-                    <i onclick="addSign()" class="right"></i>
+                    <i class="right"></i>
                 </div>
             </div>
 
-
-      <div class="news">
-          <div class="news_1">
-
-              <div id="hr1"><hr></hr></div>
-              <p id="id_news"> NEWS </p>
-              <div id="hr2"><hr></hr></div>
-
-              <ul class="news_bock">
-                  <li>
-                      <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html">
-                          <img src="Slider1"></a>
-                  </li>
-                  <li>
-                      <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html">
-                          <img src="Slider2"></a>
-                  </li>
-                  <li>
-                      <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html">
-                          <img src="Slider2"></a>
-                  </li>
-                  <li>
-                      <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html">
-                          <img src="Slider2"></a>
-                  </li>
-
-              </ul>
-         </div>
-      </div>
 
       <div class="footer-class">
           <footer class="footer-distributed">
@@ -137,7 +150,7 @@
                           </h3>
                       </div>
                       <div class="footer-center">
-                          <ul class="lista-contact1">
+                          <ul class="lista-contact">
                               <li class="call">
                                 <p class="c1">Call:</p>
                                 <p class="c2">+0759023027</p>
@@ -146,16 +159,14 @@
                                 <p class="c1">Skype:</p>
                                 <p class="c2">blablabla</p>
                               </li>
-                          </ul>
-                          <ul class="lista-contact2">
                               <li class="write">
                                 <p class="c1">Write:</p>
                                 <p class="c2">student@info.uaic.ro</p>
                               </li>
-                              <li class="adress">
+                              <!--<li class="adress">
                                 <p class="c1">Adress:</p>
-                                <p class="c2">General Berthelot, 16,<br> IASI 700483, ROMANIA</p>
-                              </li>
+                                <p class="c2">General Berthelot, 16, IASI 700483, ROMANIA</p>
+                              </li>-->
 
                           </ul>
                       </div>
@@ -174,7 +185,9 @@
               </div>
           </footer>
       </div>
-      <script src="../javascript/slideshow.js"></script>
+<script src="../javascript/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH7weUXxtqb9S6W-5IQsFsuN-LQxaaDDc&callback=contactMap"></script>
+
   </body>
 
 </html>

@@ -5,7 +5,7 @@ body{
 .slideshow_Container{
 
   position: relative;
-  margin: auto;;
+  margin: auto;
 }
 .slide{
     display: none;
@@ -82,4 +82,14 @@ body{
 }
 .cos_Logo span{
   color: #fed005;
+}
+
+@media (max-width: 800px){
+    .slide{
+      height:50%;
+      width: 100%;
+    }
+    .cos_Logo{
+      font-size:40px;
+    }
 }
