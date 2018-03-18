@@ -8,7 +8,6 @@ body{
   margin: auto;;
 }
 .slide{
-
     display: none;
     height:75%;
     background-attachment: fixed;
@@ -72,7 +71,6 @@ body{
     padding-right:25%;
 
 }
-
 .cos_Logo {
   text-align: center;
   width:100%;
@@ -80,6 +78,7 @@ body{
   color: #ffffff;
   position:absolute;
   font-size:60px;
+  z-index: 10;
 }
 .cos_Logo span{
   color: #fed005;
