@@ -1,15 +1,15 @@
 body{
-    margin:0%;
+    margin:0;
 }
 
 .slideshow_Container{
-
+  height: 75%;
   position: relative;
   margin: auto;
 }
 .slide{
-    display: none;
-    height:75%;
+    display: none ;
+    height:100% !important;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,8 +85,8 @@ body{
 }
 
 @media (max-width: 800px){
-    .slide{
-      height:50%;
+    .slideshow_Container{
+      height:50% !important;
       width: 100%;
     }
     .cos_Logo{

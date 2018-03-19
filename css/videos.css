@@ -60,7 +60,7 @@ body, html {
 .navbar {
   position:fixed;
   width:100%;
-  z-index:1;
+  z-index:100;
   top: 0;
   background-color: var(--color5);
   color: var(--color2);
@@ -101,7 +101,7 @@ body, html {
   width:100px;
   margin:0;
   padding:0;
-  z-index:1;
+  z-index:100;
 }
 .bar-item {
   transition: color 1s, background-color 1s;
