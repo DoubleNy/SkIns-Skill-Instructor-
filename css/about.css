@@ -3,7 +3,6 @@
   display: inline-block;
 }
 
-
 #cosmin{
     position: relative;
     border-style: solid;
@@ -12,8 +11,6 @@
     margin-left: 15%;
     width: 400px;
     height: 350px;
-    transform-style: preserve-3d;
-    transition: transform  1s;
 }
 
 #andreea{
@@ -114,4 +111,91 @@ figure::before {
   z-index: 5;
   top: 45%;
   left: 25%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 969px) {
+
+  #cosmin{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 300px;
+      height: 250px;
+  }
+  #andreea{
+      margin-top: 5%;
+      margin-left: 15%;
+      width: 300px;
+      height: 250px;
+  }
+  #cristi{
+      margin-top: 15%;
+      margin-left: 5%;
+      width: 300px;
+      height: 250px;
+  }
+  #dani{
+      margin-top: 15%;
+      margin-left: 15%;
+      width: 300px;
+      height: 250px;
+  }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  #cosmin{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 200px;
+      height: 180px;
+  }
+  #andreea{
+      margin-top: 5%;
+      margin-left: 15%;
+      width: 200px;
+      height: 180px;
+  }
+  #cristi{
+      margin-top: 15%;
+      margin-left: 5%;
+      width: 200px;
+      height: 180px;
+  }
+  #dani{
+      margin-top: 15%;
+      margin-left: 15%;
+      width: 200px;
+      height: 180px;
+  }
+
+}
+
+@media only screen and (max-width: 479px) {
+
+  #cosmin{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 200px;
+      height: 180px;
+  }
+  #andreea{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 200px;
+      height: 180px;
+  }
+  #cristi{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 200px;
+      height: 180px;
+  }
+  #dani{
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 200px;
+      height: 180px;
+  }
+
 }
