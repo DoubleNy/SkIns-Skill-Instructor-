@@ -252,6 +252,7 @@ body, html {
   margin:0;
   padding:0;
   z-index:1;
+
 }
 .bar-item {
   transition: color 1s, background-color 1s;
@@ -263,6 +264,7 @@ body, html {
   display:block;
   outline:0;
   text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 .bar-block .bar-item {
   width:100%;
