@@ -1,4 +1,5 @@
 :root {
+  --hexaColor: #fed005;
   --color1: #000000; /* culoare text negru */
   --color2: #ffffff; /* culoare text alb */
   --color3: #fed005; /* culoare principala */
@@ -151,6 +152,7 @@ body, html {
   background-color: var(--color5);
   padding: 3%;
   padding-top: 5%;
+  max-width: 1200px;
 }
 
 .videoContainer {
@@ -288,4 +290,125 @@ body, html {
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#CDD9DA,var(--color3),#CDD9DA);
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Import menu  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#navbar{
+  visibility: visible;
+}
+
+#navbar .hexagon{
+  opacity: 1;
+}
+#active1{
+    top:120px;
+    left:-70px;
+    z-index: 102;
+}
+
+#h2{
+    top:190px;
+    left:-110px;
+    z-index: 102;
+}
+#h3{
+    top:260px;
+    left:-70px;
+    z-index: 102;
+}
+#h4{
+    top:330px;
+    left:-110px;
+    z-index: 102;
+}
+#h5{
+    top:400px;
+    left:-70px;
+    z-index: 102;
+}
+
+#h6{
+    white-space: nowrap;
+    top:190px;
+    right:-200px;
+    z-index: 102;
+}
+#h7{
+    white-space: nowrap;
+    top:330px;
+    right: -200px;
+    z-index: 102;
+}
+
+.hexagon {
+  width: 70px;
+  height: 40px;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  background: black;
+}
+.hexagon::before,
+.hexagon::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.hexagon::before {
+  background: var(--hexaColor);
+  transform: rotate(60deg);
+}
+.hexagon::after {
+  background: var(--hexaColor);
+  transform: rotate(120deg);
+}
+.hexagon,
+.hexagon::after,
+.hexagon::before {
+  background: var(--hexaColor);
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.hexagon:hover {
+  --hexaColor: #feef10;
+}
+.hexagon:hover > .buttonName {
+    /*color:white;*/
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+#active1.hexagon,
+#active1.hexagon::after,
+#active1.hexagon::before {
+  background: #e3b40a;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+
+.buttonName{
+  position: absolute;
+  z-index: 101;
+  color:black;
+  top: 20px;
+  left: 35px;
+  transform: translate(-50%,-50%);
+}
+h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
 }
