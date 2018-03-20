@@ -1,6 +1,6 @@
 
 //login animation
-/*
+
 #pop h3{
     white-space: nowrap;
 }
@@ -44,23 +44,27 @@
     -webkit-transform: rotate(-45deg);
 }
 
+
 #pop {
-  display: none;
+  z-index: 20;
+  visibility: hidden;
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 450px;
-  right: -100px;
+  position: relative;
+  top: -20%;
+  right: -100%;
 }
+
 .pop-up-forward{
+  visibility: visible;
   animation: front 1.5s ease forwards;
 }
 
 @keyframes front {
-  from {right: 0px;}
-  to {right: 600px;}
+  from {right: -100%;}
+  to {right: -70%;}
 }
-
+/*
 .pop-up-backward{
   animation: back  1s ease forwards;
 }
@@ -69,7 +73,8 @@
     from {right: 600px;}
     to {right: -100px;}
 }
-
+*/
+/*
 //sign up animation
 #signUP input{
   margin: 5px;
