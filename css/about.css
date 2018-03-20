@@ -112,90 +112,138 @@ figure::before {
   top: 45%;
   left: 25%;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 969px) {
-
+@media only screen and (max-width: 1700px) {
   #cosmin{
-      margin-top: 5%;
-      margin-left: 5%;
-      width: 300px;
-      height: 250px;
+      margin-left: 15%;
   }
   #andreea{
-      margin-top: 5%;
       margin-left: 15%;
-      width: 300px;
-      height: 250px;
   }
   #cristi{
-      margin-top: 15%;
-      margin-left: 5%;
-      width: 300px;
-      height: 250px;
+      margin-left: 15%;
   }
   #dani{
-      margin-top: 15%;
       margin-left: 15%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  #cosmin{
       width: 300px;
       height: 250px;
+      margin-left: 12%;
   }
-
+  #andreea{
+      width: 300px;
+      height: 250px;
+      margin-left: 20%;
+  }
+  #cristi{
+      width: 300px;
+      height: 250px;
+      margin-left: 12%;
+  }
+  #dani{
+      width: 300px;
+      height: 250px;
+      margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  #cosmin{
+      width: 250px;
+      height: 200px;
+      margin-left: 12%;
+  }
+  #andreea{
+      width: 250px;
+      height: 200px;
+      margin-left: 20%;
+  }
+  #cristi{
+      width: 250px;
+      height: 200px;
+      margin-left: 12%;
+  }
+  #dani{
+      width: 250px;
+      height: 200px;
+      margin-left: 20%;
+  }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
+@media only screen and (max-width: 959px) {
   #cosmin{
-      margin-top: 5%;
-      margin-left: 5%;
       width: 200px;
-      height: 180px;
+      height: 160px;
+      margin-left: 10%;
   }
   #andreea{
-      margin-top: 5%;
-      margin-left: 15%;
       width: 200px;
-      height: 180px;
+      height: 160px;
+      margin-left: 18%;
   }
   #cristi{
-      margin-top: 15%;
-      margin-left: 5%;
       width: 200px;
-      height: 180px;
+      height: 160px;
+      margin-left: 10%;
   }
   #dani{
-      margin-top: 15%;
-      margin-left: 15%;
       width: 200px;
-      height: 180px;
+      height: 160px;
+      margin-left: 18%;
   }
-
 }
 
-@media only screen and (max-width: 479px) {
-
+@media only screen and (max-width: 767px) {
   #cosmin{
-      margin-top: 5%;
-      margin-left: 5%;
-      width: 200px;
-      height: 180px;
+      width: 170px;
+      height: 130px;
+      margin-left: 7%;
   }
   #andreea{
-      margin-top: 5%;
-      margin-left: 5%;
-      width: 200px;
-      height: 180px;
+      width: 170px;
+      height: 130px;
+      margin-left: 14%;
   }
   #cristi{
-      margin-top: 5%;
-      margin-left: 5%;
-      width: 200px;
-      height: 180px;
+      width: 170px;
+      height: 130px;
+      margin-left: 7%;
   }
   #dani{
-      margin-top: 5%;
-      margin-left: 5%;
-      width: 200px;
-      height: 180px;
+      width: 170px;
+      height: 130px;
+      margin-left: 14%;
   }
+}
 
+@media only screen and (max-width: 520px) {
+  .infoList > li{
+    position: absolute;
+    display: block;
+  }
+  #cosmin{
+      width: 170px;
+      height: 130px;
+      margin-top: 5%;
+      margin-left: 20%;
+  }
+  #andreea{
+      width: 170px;
+      height: 130px;
+      margin-top: 5%;
+      margin-left: 20%;
+  }
+  #cristi{
+      width: 170px;
+      height: 130px;
+      margin-top: 5%;
+      margin-left: 20%;
+  }
+  #dani{
+      width: 170px;
+      height: 130px;
+      margin-top: 5%;
+      margin-left: 20%;
+  }
 }

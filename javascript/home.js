@@ -19,17 +19,18 @@ function myFunction(x) {
 }
   function addPop() {
       var logare = document.getElementById('pop');
-      var singIsOnDisplay = document.getElementById('signUP').classList.contains('sign-up-forward');
+      //var singIsOnDisplay = document.getElementById('signUP').classList.contains('sign-up-forward');
       var hasClass = logare.classList.contains('pop-up-forward');
       //console.log(singIsOnDisplay);
-      if(singIsOnDisplay){
-          addSign();
-      }
+      //if(singIsOnDisplay){
+    //      addSign();
+    //  }
       if(hasClass){
           logare.classList.add("pop-up-backward");
           logare.classList.remove("pop-up-forward");
           //logare.classList.toggle("pop-up-backward");
         } else {
+          logare.style.visibility='visible';
           logare.classList.remove("pop-up-backward");
           logare.classList.add("pop-up-forward");
           logare.style.display = "block";
