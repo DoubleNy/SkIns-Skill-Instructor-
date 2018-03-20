@@ -81,7 +81,7 @@ body{
   z-index: 10;
 }
 .cos_Logo span{
-  color: #fed005;
+  color: var(--color3);
 }
 
 @media (max-width: 800px){
