@@ -77,10 +77,7 @@ a.fa.fa-github:hover{
   background-attachment: fixed;
 }
 
-.footer-class{
-    position: relative;
-    height: 300px;
-}
+
 .div1{
   width: 100%;
   max-width: 1100px;
@@ -88,7 +85,7 @@ a.fa.fa-github:hover{
 }
 
 .footer-distributed {
-  //position: absolute;
+  --position: relative;
   height: 150px;
   right: 0;
   bottom: 0;
@@ -135,11 +132,7 @@ a.fa.fa-github:hover{
   color: #fed005;
 }
 
-@media screen and (min-width: 768px) and (max-width: 959px) {
-	.footer-center{
-    width: 50%;
-  }
-}
+
 
 
 
@@ -282,5 +275,79 @@ a.fa.fa-github:hover{
   animation: move7  1s ease forwards;
 }
 @keyframes move7 {
+<<<<<<< HEAD
+  from {top:330px;right:30px;}
+  to {top:330px;right:-200px;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+	  /*footer */
+
+	  .footer-center{
+	    width: 50%;
+	  }
+	  .footer-right{
+	    text-align: center;
+	    width: 25%;
+	  }
+	  .footer-right ul{
+	    padding: 0;
+	  }
+}
+@media screen and (min-width: 591px) and (max-width: 767px) {
+	  /*footer */
+
+	  .footer-center{
+	    width: 50%;
+	  }
+	  .footer-right{
+	    text-align: center;
+	    width: 25%;
+	  }
+	  .footer-right ul{
+	    padding: 0;
+	  }
+	}
+
+@media screen and (min-width:480px) and (max-width:590px){
+
+	  .footer-left {
+	    transform: translateY(-30px);
+	  }
+	  .footer-distributed .div1{
+	    background-color: #292c2f;
+	  }
+
+	}
+
+@media screen and (max-width:479px){
+
+	  .footer-left {
+	    transform: translateY(-30px);
+	  }
+	  .footer-distributed .div1{
+	    background-color: #292c2f;
+	  }
+	  .footer-center{
+	    display: block;
+	  }
+	  .social-bar{
+	    padding-left: 30%;
+	  }
+	  .write{
+	    display: none;
+	  }
+	  .skype{
+	    display:none;
+	  }
+	  .lista-contact1,
+	  .lista-contact2{
+	    width:100%;
+	    display: block;
+	  }
+}
+=======
   from {top:350px;right:30px;}
   to {top:350px;right:-200px;}
+>>>>>>> d7e6338869662fc7280d7f08cb487d99c8a15258
