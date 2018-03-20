@@ -120,6 +120,7 @@ a.fa.fa-github:hover{
 
 .footer-left h3{
   color: #ffffff;
+	padding-left: 20%;
   font: normal 30px 'Cookie', cursive;
 }
 
@@ -132,6 +133,12 @@ a.fa.fa-github:hover{
   display: block;
   margin-bottom: 29px;
   color: #fed005;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	.footer-center{
+    width: 50%;
+  }
 }
 
 

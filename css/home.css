@@ -26,10 +26,20 @@ body{
     left:0;
     min-width: 100%;
     min-height: 75%;
+    opacity: 0.8;
 }
-
-#navbar{
-  visibility: visible;
+.A_content{
+    position: absolute;
+    width:100%;
+    top:20%;
+    margin:auto;
+    text-align: center;
+}
+.A_content h1{
+    font-size: 60px;
+    font: Poppins, sans-serif;
+    font-weight: 200;
+    color:black;
 }
 
 #navbar .hexagon{
@@ -202,7 +212,6 @@ center{
 }
 .news_img img{
   position: absolute;
-
   min-width: 100%;
   max-width: none;
   max-height: 100%;
@@ -342,4 +351,122 @@ center{
 @keyframes read_in{
   from{top: 60px;}
   to{top:120px;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+  .news_block li{
+    width: 270px;
+    display: inline-block;
+    margin: 0 10px 30px;
+    overflow: hidden;
+  }
+  #news1{
+      position: relative;
+      transform: translateY(0);
+  }
+  #news2{
+    position: relative;
+    transform: translateY(0);
+  }
+  #news3{
+    position: relative;
+    transform: translateY(0);
+  }
+
+  #news5{
+    position: relative;
+    transform: translateY(0);
+  }
+  #news6{
+    position: relative;
+    transform: translateY(0);
+  }
+
+  /*footer */
+
+  .footer-center{
+    width: 50%;
+  }
+  .footer-right{
+    text-align: center;
+    width: 25%;
+  }
+  .footer-right ul{
+    padding: 0;
+  }
+}
+@media screen and (min-width: 591px) and (max-width: 767px) {
+  .news_block li{
+    width: 270px;
+    display: inline-block;
+    margin: 0 10px 30px;
+    overflow: hidden;
+  }
+  #news1{
+      position: relative;
+      transform: translateY(0);
+  }
+  #news2{
+    position: relative;
+    transform: translateY(0);
+  }
+  #news3{
+    position: relative;
+    transform: translateY(0);
+  }
+
+  #news5{
+    position: relative;
+    transform: translateY(0);
+  }
+  #news6{
+    position: relative;
+    transform: translateY(0);
+  }
+
+  /*footer */
+
+  .footer-center{
+    width: 50%;
+  }
+  .footer-right{
+    text-align: center;
+    width: 25%;
+  }
+  .footer-right ul{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:590px){
+
+  #news1{
+      position: relative;
+      transform: translateY(0);
+  }
+  #news2{
+    position: relative;
+    transform: translateY(0);
+  }
+  #news3{
+    position: relative;
+    transform: translateY(0);
+  }
+
+  #news5{
+    position: relative;
+    transform: translateY(0);
+  }
+  #news6{
+    position: relative;
+    transform: translateY(0);
+  }
+  .A_content {
+    top:45%;
+  }
+  .lista-contact1{
+    display: none;
+  }
 }
