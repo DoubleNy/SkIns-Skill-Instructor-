@@ -1,5 +1,6 @@
 
 //login animation
+/*
 #pop h3{
     white-space: nowrap;
 }
@@ -118,6 +119,8 @@
   right: -100px;
 }
 
+
+
 .sign-up-forward input{
   margin: 5px;
   padding: 8px;
@@ -152,4 +155,4 @@
 @keyframes back2 {
     from {right: 600px;}
     to {right: -100px;}
-}
+}*/

@@ -260,7 +260,6 @@ a.fa.fa-github:hover{
 }
 @keyframes move4 {
   from {top:330px;left:110px;}
-  to {top:330px;left:-110px;}
 }
 
 .slide-left #h5 {
@@ -285,4 +284,3 @@ a.fa.fa-github:hover{
 @keyframes move7 {
   from {top:330px;right:30px;}
   to {top:330px;right:-200px;}
-}
