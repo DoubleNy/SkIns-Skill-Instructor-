@@ -1,40 +1,8 @@
-:root {
-  --color1: #000000; /* culoare text negru */
-  --color2: #ffffff; /* culoare text alb */
-  --color3: #d1fff8; /* culoare principala */
-  --color4: #d1d1d1; /* gri deschis */
-  --color5: #292c2f; /* gri inchis */
-
-  --T1color1: #000000;
-  --T1color2: #ffffff;
-  --T1color3: #d1fff8;
-  --T1color4: #d1d1d1;
-  --T1color5: #292c2f;
-
-  --T2color1: #000000;
-  --T2color2: #ffffff;
-  --T2color3: #abff9e;
-  --T2color4: #d1d1d1;
-  --T2color5: #292c2f;
-
-  --T3color1: #000000;
-  --T3color2: #ffffff;
-  --T3color3: #fff89e;
-  --T3color4: #d1d1d1;
-  --T3color5: #292c2f;
-
-  --T4color1: #000000;
-  --T4color2: #ffffff;
-  --T4color3: #e69eff;
-  --T4color4: #d1d1d1;
-  --T4color5: #292c2f;
-}
-
 .infoDocument {
   width: 960px;
   height: 400px;
   background-color: var(--color5);
-  margin: 20px auto;
+  margin: 50px auto;
   box-shadow: 0 25px 30px rgba(0,0,0,0.5);
   display: flex;
 }
@@ -51,19 +19,19 @@
 .button {
   width: 100px;
   height: 40px;
-  background-color: red;
+  background-color: var(--color3);
   padding: 10px;
   text-decoration: none;
-  color: white;
+  color: var(--color2);
   font-weight: bold;
   border-radius: 4px;
 }
 .button:active,
 .button:visited {
-  background-color: red;
+  background-color: var(--color3);
 }
 .button:hover {
-  background-color: Darkred;
+  background-color: var(--color6);
 }
 
 .imageBox {
@@ -77,50 +45,78 @@
   background-position: -100px -150px;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Navbar-ul  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~ Template colors footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#templateColors {
-  position: fixed;
-  bottom: 0;
-  left: -160px;
-  width: 190px;
-  height: 40px;
-  border-radius: 0 50px 0 0;
-  background-color: black;
-  opacity: 0.15;
-  padding-left: 10px;
-  transition: opacity 1s ease-in, left 1s;
+.navbar1 {
+  position:fixed;
+  width:100%;
+  z-index:100;
+  top: 0;
+  background-color: var(--color5);
+  color: white;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  text-align: center;
+}
+.dropdown-hover1 {
+  display:inline-block;
+  cursor:pointer;
+  float:center;
+}
+.button1 {
+  padding:12px 24px!important;
+  border:none;
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:normal;
+}
+.button1:hover {
+  background-color: var(--color3);
+  color: black;
 }
 
-#templateColors:hover {
-  opacity: 1;
-  left: 0px;
-  transition: opacity 1s ease-in, left 1s;
+.dropdown-hover1:hover .dropdown-content1 {
+  display:block;
 }
-
-#templateColors a {
-  width: 20px;
-  height: 20px;
-  margin: 10px;
-  background-color: white;
-  display: inline-block;
+.dropdown-content1 {
+  cursor:auto;
+  color:white;
+  background-color:var(--color2);
+  display:none;
+  position:absolute;
+  width:100px;
+  margin:0;
+  padding:0;
+  z-index:100;
 }
-
-#template1 {
-  background: linear-gradient(to bottom right,var(--T1color1),var(--T1color2),var(--T1color3),var(--T1color4),var(--T1color5));
+.bar-item1 {
+  transition: color 1s, background-color 1s;
+  -webkit-transition: color 1s, background-color 1s;
+  padding:8px 16px;
+  float:center;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  text-align: center;
 }
-
-#template2 {
-  background: linear-gradient(to bottom right,var(--T2color1),var(--T2color2),var(--T2color3),var(--T2color4),var(--T2color5));
+.bar-block1 .bar-item1 {
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  border:none;
+  white-space:normal;
+  float:none;
+  outline:0;
 }
-
-#template3 {
-  background: linear-gradient(to bottom right,var(--T3color1),var(--T3color2),var(--T3color3),var(--T3color4),var(--T3color5));
-}
-
-#template4 {
-  background: linear-gradient(to bottom right,var(--T4color1),var(--T4color2),var(--T4color3),var(--T4color4),var(--T4color5));
+.bar-item1 :hover {
+  color: var(--color2);
+  background-color: var(--color3);
+  transition: color 0.3s, background-color 0.3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
 }

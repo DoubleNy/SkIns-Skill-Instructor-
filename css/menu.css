@@ -20,7 +20,7 @@ a.fa.fa-facebook:hover,
 a.fa.fa-instagram:hover,
 a.fa.fa-twitter:hover,
 a.fa.fa-github:hover{
-		background-color: #fed005;
+		background-color: var(--color3);
 		color:black;
 }
 
@@ -122,14 +122,14 @@ a.fa.fa-github:hover{
 }
 
 .footer-left h3 span{
-  color: #fed005;
+  color: var(--color3);
 }
 
 .title{
   font: 14px/20px sharp_sans_no1bold, sans-serif;
   display: block;
   margin-bottom: 29px;
-  color: #fed005;
+  color: var(--color3);
 }
 
 
@@ -150,6 +150,8 @@ a.fa.fa-github:hover{
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+		border: 1px solid white;
+		box-sizing: border-box;
     /*position:fixed;*/
 }
 

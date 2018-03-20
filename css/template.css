@@ -1,0 +1,61 @@
+:root {
+  --color1: #000000; /* culoare text negru */
+  --color2: #ffffff; /* culoare text alb */
+  --color3: red; /* culoare principala */
+  --color4: #d1d1d1; /* gri deschis */
+  --color5: #292c2f; /* gri inchis */
+  --color6: darkred;
+
+  --T1color1: #000000;
+  --T1color2: #ffffff;
+  --T1color3: red;
+  --T1color4: #d1d1d1;
+  --T1color5: #292c2f;
+  --T1color6: darkred;
+
+
+  --T2color1: #ffffff;
+  --T2color2: #000000;
+  --T2color3: yellow;
+  --T2color4: #d1d1d1;
+  --T2color5: #292c2f;
+  --T2color6: #e6e600;
+
+}
+
+#templateColors {
+  position: fixed;
+  bottom: 0;
+  left: -160px;
+  width: 190px;
+  height: 40px;
+  border-radius: 0 50px 0 0;
+  background-color: black;
+  opacity: 0.15;
+  padding-left: 10px;
+  transition: opacity 1s ease-in, left 1s;
+  -webkit-transition: opacity 1s ease-in, left 1s;
+}
+
+#templateColors:hover {
+  opacity: 1;
+  left: 0px;
+  transition: opacity 1s ease-in, left 1s;
+  -webkit-transition: opacity 1s ease-in, left 1s;
+}
+
+#templateColors a {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  background-color: white;
+  display: inline-block;
+}
+
+#template1 {
+  background: linear-gradient(to bottom right,var(--T1color1),var(--T1color2),var(--T1color3),var(--T1color4),var(--T1color5),var(--T1color6));
+}
+
+#template2 {
+  background: linear-gradient(to bottom right,var(--T2color1),var(--T2color2),var(--T2color3),var(--T2color4),var(--T2color5),var(--T2color6));
+}

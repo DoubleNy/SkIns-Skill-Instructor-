@@ -1,10 +1,10 @@
-:root {
+/*:root {
   --hexaColor: #fed005;
   --color2: #004400;
   --color3: #00A800;
   --color4: #75FF63;
   --color5: #D1D1D1;
-}
+}*/
 
 body{
   max-width: 100%;
@@ -99,17 +99,17 @@ body{
   position: absolute;
 }
 .hexagon::before {
-  background: var(--hexaColor);
+  background: var(--color3);
   transform: rotate(60deg);
 }
 .hexagon::after {
-  background: var(--hexaColor);
+  background: var(--color3);
   transform: rotate(120deg);
 }
 .hexagon,
 .hexagon::after,
 .hexagon::before {
-  background: var(--hexaColor);
+  background: var(--color3);
   -webkit-transition: background 0.5s ease;
   -moz-transition: background 0.5s ease;
   -ms-transition: background 0.5s ease;
@@ -118,7 +118,7 @@ body{
 }
 
 .hexagon:hover {
-  --hexaColor: #feef10;
+  --color3: var(--color6);
 }
 .hexagon:hover > .buttonName {
     /*color:white;*/
@@ -132,7 +132,7 @@ body{
 #active1.hexagon,
 #active1.hexagon::after,
 #active1.hexagon::before {
-  background: #e3b40a;
+  background: var(--color6);
   -webkit-transition: background 0.5s ease;
   -moz-transition: background 0.5s ease;
   -ms-transition: background 0.5s ease;
@@ -144,7 +144,7 @@ body{
 .buttonName{
   position: absolute;
   z-index: 2;
-  color:black;
+  color:var(--color2);
   top: 20px;
   left: 35px;
   transform: translate(-50%,-50%);
@@ -327,7 +327,7 @@ center{
 }
 
 .link_detail:hover{
-  color: #fed005;
+  color: var(--color3);
 }
 
 @keyframes read_in{
