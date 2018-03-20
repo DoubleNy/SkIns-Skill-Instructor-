@@ -34,7 +34,7 @@
   width: 960px;
   height: 400px;
   background-color: var(--color5);
-  margin: 20px auto;
+  margin: 50px auto;
   box-shadow: 0 25px 30px rgba(0,0,0,0.5);
   display: flex;
 }
@@ -123,4 +123,83 @@
 
 #template4 {
   background: linear-gradient(to bottom right,var(--T4color1),var(--T4color2),var(--T4color3),var(--T4color4),var(--T4color5));
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Category bar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.navbar1 {
+  position:fixed;
+  width:100%;
+  z-index:11;
+  top: 0;
+  background-color: var(--color5);
+  color: var(--color2);
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  text-align: center;
+}
+.dropdown-hover1 {
+  display:inline-block;
+  cursor:pointer;
+  float:center;
+}
+.button1 {
+  padding:12px 24px!important;
+  border:none;
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:normal;
+}
+.button1:hover {
+  background-color: var(--color3);
+  color: black;
+}
+
+.dropdown-hover1:hover .dropdown-content1 {
+  display:block;
+}
+.dropdown-content1 {
+  cursor:auto;
+  color:var(--color2);
+  background-color:var(--color5);
+  display:none;
+  position:absolute;
+  width:100px;
+  margin:0;
+  padding:0;
+  z-index:11;
+
+}
+.bar-item1 {
+  transition: color 1s, background-color 1s;
+  -webkit-transition: color 1s, background-color 1s;
+  padding:8px 16px;
+  float:center;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+.bar-block1 .bar-item1 {
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  border:none;
+  white-space:normal;
+  float:none;
+  outline:0;
+}
+.bar-item1:hover {
+  color: black;
+  background-color: var(--color3);
+  transition: color 0.3s, background-color 0.3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
 }
