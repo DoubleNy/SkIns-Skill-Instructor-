@@ -145,6 +145,23 @@ figure img{
       height: 250px;
       margin-left: 20%;
   }
+
+  .nume{
+    color: var(--color3);
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 25%;
+    font-size: 20px;
+  }
+
+  .text{
+    color: yellow;
+    position: absolute;
+    z-index: 5;
+    top: 45%;
+    left: 10%;
+  }
 }
 @media only screen and (max-width: 1150px) {
   #cosmin{
@@ -166,6 +183,22 @@ figure img{
       width: 250px;
       height: 200px;
       margin-left: 20%;
+  }
+  .nume{
+    color: var(--color3);
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 25%;
+    font-size: 20px;
+  }
+
+  .text{
+    color: yellow;
+    position: absolute;
+    z-index: 5;
+    top: 45%;
+    left: 10%;
   }
 }
 
@@ -190,6 +223,22 @@ figure img{
       height: 160px;
       margin-left: 18%;
   }
+  .nume{
+    color: var(--color3);
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 15%;
+    font-size: 20px;
+  }
+
+  .text{
+    color: yellow;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 0%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -212,6 +261,23 @@ figure img{
       width: 170px;
       height: 130px;
       margin-left: 14%;
+  }
+  .nume{
+    color: var(--color3);
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 15%;
+    font-size: 20px;
+  }
+
+  .text{
+    font-size: 6px;
+    color: yellow;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: -4%;
   }
 }
 
@@ -243,5 +309,23 @@ figure img{
       height: 130px;
       margin-top: 5%;
       margin-left: 20%;
+  }
+  .nume{
+    font-size: 3px;
+    color: var(--color3);
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 15%;
+    font-size: 20px;
+  }
+
+  .text{
+    font-size: 3px;
+    color: yellow;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 10%;
   }
 }
