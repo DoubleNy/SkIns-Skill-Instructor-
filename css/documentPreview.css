@@ -30,12 +30,15 @@
   --T4color5: #292c2f;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .infoDocument {
   width: 100%;
   height: 500px;
   background-color: var(--color5);
   margin: 0 auto;
-  box-shadow: 0 25px 30px rgba(0,0,0,0.5);
   display: flex;
 }
 
@@ -53,17 +56,34 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.documentContent {
-  width: 100%;
+.infoDocument2 .documentContent {
+  width: calc(50% + 50px);
+  height: 100%;
+  box-sizing: border-box;
   background-color: var(--color5);
   color: white;
-  margin: 0;
-  padding: 20px;
+  font-size: 15px;
+  padding: 40px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.imageBox {
+.infoDocument .documentContent {
+  width: calc(50% - 50px);
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--color5);
+  color: white;
+  font-size: 15px;
+  padding: 40px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.infoDocument .imageBox {
   width: calc(50% + 50px);
   height: 100%;
   box-sizing: border-box;
@@ -72,6 +92,25 @@
   border-top: 500px solid transparent;
   background: url("../images/docpic.jpg");
   background-position: -100px 150px;
+}
+
+.infoDocument2 .imageBox {
+  width: calc(50% - 50px);
+  height: 100%;
+  box-sizing: border-box;
+  background: red;
+  border-right: 100px solid var(--color5);
+  border-bottom: 500px solid transparent;
+  background: url("../images/docpic.jpg");
+  background-position: -100px -150px;
+}
+
+.infoDocument2 {
+  width: 100%;
+  height: 500px;
+  background-color: var(--color5);
+  margin: 0 auto;
+  display: flex;
 }
 
 .button {
@@ -137,4 +176,19 @@
 
 #template4 {
   background: linear-gradient(to bottom right,var(--T4color1),var(--T4color2),var(--T4color3),var(--T4color4),var(--T4color5));
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Scrollbar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--color5);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--color5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--color5),var(--color3),var(--color5));
 }
