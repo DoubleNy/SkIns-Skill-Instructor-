@@ -205,6 +205,7 @@ center{
   margin: 0 10px 30px;
 
 }
+
 .news_img{
   position:relative;
   margin-bottom: 15px;
@@ -228,25 +229,6 @@ center{
   cursor: pointer;
 }
 
-
-
-#news2{
-  position: relative;
-  transform: translateY(70px);
-}
-#news3{
-  position: relative;
-  transform: translateY(-130px);
-}
-
-#news5{
-  position: relative;
-  transform: translateY(70px);
-}
-#news6{
-  position: relative;
-  transform: translateY(-130px);
-}
 .hover-block{
   z-index: -1;
   position: absolute;
@@ -360,57 +342,7 @@ center{
     margin: 0 10px 30px;
     overflow: hidden;
   }
-  #news1{
-      position: relative;
-      transform: translateY(0);
-  }
-  #news2{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news3{
-    position: relative;
-    transform: translateY(0);
-  }
-
-  #news5{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news6{
-    position: relative;
-    transform: translateY(0);
-  }
-}/*
-@media screen and (min-width:1210px){
-  .news_block li{
-    width: 330px;
-    display: inline-block;
-    margin: 0 10px 30px;
-    overflow: hidden;
-  }
-  .news_img img{
-    margin:0;
-    position: absolute;
-    min-width: 100%;
-    max-width: none;
-    max-height: 100%;
-    left:0px;
-  }
-  .news_block li{
-    width: 80%;
-    height: 350px;
-    display: inline-block;
-    margin: 0 10px 30px;
-    overflow: hidden;
-    padding-bottom: 30px;
-  }
-
-  .link_news{
-    width: 100%;
-    height: 350px;
-  }
-}*/
+}
 @media screen and (min-width: 768px) and (max-width: 959px) {
 
   .news_block li{
@@ -419,27 +351,7 @@ center{
     margin: 0 10px 30px;
     overflow: hidden;
   }
-  #news1{
-      position: relative;
-      transform: translateY(0);
-  }
-  #news2{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news3{
-    position: relative;
-    transform: translateY(0);
-  }
 
-  #news5{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news6{
-    position: relative;
-    transform: translateY(0);
-  }
 
   /*footer */
 
@@ -461,27 +373,7 @@ center{
     margin: 0 10px 30px;
     overflow: hidden;
   }
-  #news1{
-      position: relative;
-      transform: translateY(0);
-  }
-  #news2{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news3{
-    position: relative;
-    transform: translateY(0);
-  }
 
-  #news5{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news6{
-    position: relative;
-    transform: translateY(0);
-  }
 
   /*footer */
 
@@ -499,27 +391,7 @@ center{
 
 @media screen and (min-width:480px) and (max-width:590px){
 
-  #news1{
-      position: relative;
-      transform: translateY(0);
-  }
-  #news2{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news3{
-    position: relative;
-    transform: translateY(0);
-  }
 
-  #news5{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news6{
-    position: relative;
-    transform: translateY(0);
-  }
   .footer-left {
     transform: translateY(-30px);
   }
@@ -560,27 +432,7 @@ center{
     width: 100%;
     height: 350px;
   }
-  #news1{
-      position: relative;
-      transform: translateY(0);
-  }
-  #news2{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news3{
-    position: relative;
-    transform: translateY(0);
-  }
 
-  #news5{
-    position: relative;
-    transform: translateY(0);
-  }
-  #news6{
-    position: relative;
-    transform: translateY(0);
-  }
 
   .footer-left {
     transform: translateY(-30px);
@@ -606,3 +458,34 @@ center{
     display:none;
   }
 }
+@media screen and (min-width:1600px){
+  .news_block li{
+    display: inline-block;
+    width: 350px;
+    margin: 0 30px 30px;
+  }
+  .news_img img{
+    height: 500px;
+    width: 350px;
+  }
+  .link_news{
+    position: relative;
+    display: block;
+    height: 500px;
+    width: 350px;
+    cursor: pointer;
+  }
+
+  .hover-block{
+    z-index: -1;
+    position: absolute;
+    width: 81.5%;
+    height: 87.7%;
+    left:0;
+    top:0;
+    padding: 30px;
+    transition: opacity .5s;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .8);
+  }
+}*/
