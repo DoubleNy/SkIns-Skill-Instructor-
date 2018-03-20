@@ -137,7 +137,7 @@ a.fa.fa-github:hover{
 
 
 .container1 {
-    top:20px;
+    top:40px;
     left:30px;
     position:fixed;
     display: inline-block;
@@ -171,16 +171,16 @@ a.fa.fa-github:hover{
   animation: my_move1  2s ease forwards;
 }
 @keyframes my_move1 {
-  from {top:120px;left:-70px;}
-  to {top:120px;left:70px;}
+  from {top:140px;left:-70px;}
+  to {top:140px;left:70px;}
 }
 
 .slide-right #h2 {
   animation: my_move2  1s ease forwards;
 }
 @keyframes my_move2 {
-  from {top:190px;left:-110px;}
-  to {top:190px;left:110px;}
+  from {top:210px;left:-110px;}
+  to {top:210px;left:110px;}
 }
 
 
@@ -188,56 +188,56 @@ a.fa.fa-github:hover{
   animation: mymove3  2s ease forwards;
 }
 @keyframes mymove3 {
-  from {top:260px;left:-70px;}
-  to {top:260px;left:70px;}
+  from {top:280px;left:-70px;}
+  to {top:280px;left:70px;}
 }
 
 .slide-right #h4 {
   animation: mymove4  1s ease forwards;
 }
 @keyframes mymove4 {
-  from {top:330px;left:-110px;}
-  to {top:330px;left:110px;}
+  from {top:350px;left:-110px;}
+  to {top:350px;left:110px;}
 }
 
 .slide-right #h5 {
   animation: mymove5  2s ease forwards;
 }
 @keyframes mymove5 {
-  from {top:400px;left:-70px;}
-  to {top:400px;left:70px;}
+  from {top:420px;left:-70px;}
+  to {top:420px;left:70px;}
 }
 
 .slide-right #h6 {
   animation: mymove6  1s ease forwards;
 }
 @keyframes mymove6 {
-  from {top:190px;right:-200px;}
-  to {top:190px;right:30px;}
+  from {top:210px;right:-200px;}
+  to {top:210px;right:30px;}
 }
 
 .slide-right #h7 {
   animation: mymove7  1s ease forwards;
 }
 @keyframes mymove7 {
-  from {top:330px;right:-200px;}
-  to {top:330px;right:30px;}
+  from {top:350px;right:-200px;}
+  to {top:350px;right:30px;}
 }
 
 .slide-left #active1 {
   animation: move1  2s ease forwards;
 }
 @keyframes move1 {
-  from {top:120px;left:70px;}
-  to {top:120px;left:-70px;}
+  from {top:140px;left:70px;}
+  to {top:140px;left:-70px;}
 }
 
 .slide-left #h2 {
   animation: move2  1s ease forwards;
 }
 @keyframes move2 {
-  from {top:190px;left:110px;}
-  to {top:190px;left:-110px;}
+  from {top:210px;left:110px;}
+  to {top:210px;left:-110px;}
 }
 
 
@@ -245,8 +245,8 @@ a.fa.fa-github:hover{
   animation: move3  2s ease forwards;
 }
 @keyframes move3 {
-  from {top:260px;left:70px;}
-  to {top:260px;left:-70px;}
+  from {top:280px;left:70px;}
+  to {top:280px;left:-70px;}
 }
 
 
@@ -254,29 +254,29 @@ a.fa.fa-github:hover{
   animation: move4  1s ease forwards;
 }
 @keyframes move4 {
-  from {top:330px;left:110px;}
+  from {top:350px;left:110px;}
 }
 
 .slide-left #h5 {
   animation: move5  2s ease forwards;
 }
 @keyframes move5 {
-  from {top:400px;left:70px;}
-  to {top:400px;left:-70px;}
+  from {top:420px;left:70px;}
+  to {top:420px;left:-70px;}
 }
 
 .slide-left #h6 {
   animation: move6  1s ease forwards;
 }
 @keyframes move6 {
-  from {top:190px;right:30px;}
-  to {top:190px;right:-200px;}
+  from {top:210px;right:30px;}
+  to {top:210px;right:-200px;}
 }
 
 .slide-left #h7 {
   animation: move7  1s ease forwards;
 }
 @keyframes move7 {
-  from {top:330px;right:30px;}
-  to {top:330px;right:-200px;}
+  from {top:350px;right:30px;}
+  to {top:350px;right:-200px;}
 }

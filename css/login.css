@@ -11,7 +11,8 @@ body {
 }
 
 .wrapper {
-  background: #A9A9A9;
+  background: #fed005;
+  opacity: 0.7;
   position: absolute;
   top: 40%;
   left: 0;
@@ -50,13 +51,13 @@ form input {
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #5313a6;
+  color: #fed005;
 }
 form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #DAA520;
+  color: var(--color3);
 
   border-radius: 3px;
   width: 250px;
