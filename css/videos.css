@@ -129,7 +129,7 @@ body, html {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Video Container  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.container {
+#container {
   width: 84%;
   margin: 0px auto;
   margin-bottom: 40px;
@@ -185,6 +185,9 @@ body, html {
 }
 
 .descriptionTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
   font-size: 15px;
   color: black;
 }
