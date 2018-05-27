@@ -181,9 +181,6 @@
          </div>
          </center>
 
-         <button id="more">More</button>
-
-
               <footer class="footer-distributed">
                     <div class="div1">
                             <div class="footer-left">
@@ -235,8 +232,12 @@
             </div>
             <script src="../javascript/template.js"></script>
             <script type="text/javascript">
-                $(document).ready(function(){
-                    $("#more").click(function(){
+              $(window).scroll(function () {
+                console.log("scolling...");
+                console.log($(window).scrollTop());
+                console.log($(document).height() - $(window).height());
+                if ($(window).scrollTop() >= $(document).height() - $(window).height())
+                {
                       $.ajax({
                         type: "POST",
                         url: 'getvideos.php',
@@ -244,8 +245,8 @@
                           $("#container").append(html);
                         }
                       });
-                    });
-                });
+                }
+              });
             </script>
 </body>
 </html>
