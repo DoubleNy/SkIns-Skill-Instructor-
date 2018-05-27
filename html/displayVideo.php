@@ -51,21 +51,23 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Video Container  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div id="mainContent">
     <div id="video">
-      <video style="width:854px;height:480px;" controls>
-        <source src="../videos/How to Learn Anything Quickly.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
+      <?php
+      echo '<iframe style="width:854px;height:480px;" src="https://www.youtube.com/embed/'.$_GET['idOfVideo'].'" frameborder="0" allowfullscreen></iframe>';
+      $API_key = 'AIzaSyBS2yY5JobnjSKnANIUdIrEXyQJ2ELnGbQ';
+      $videoInfo = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=statistics&id='.$_GET['idOfVideo'].'&key='.$API_key));
+      $videoTitle = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=snippet&id='.$_GET['idOfVideo'].'&key='.$API_key));
+      ?>
     </div>
 
     <div id="videoInfo">
       <div id="title">
-        <h1>Titlul video-ului</h1>
+        <h1><?php echo $videoTitle->items[0]->snippet->title; ?></h1>
       </div>
 
         <i id="viewsLogo" class="fa fa-eye"></i>
-        <i id="views">1012310</i>
+        <i id="views"><?php echo $videoInfo->items[0]->statistics->viewCount; ?></i>
         <i style="float:right;">
-          <i id="comments">914149</i>
+          <i id="comments"><?php echo $videoInfo->items[0]->statistics->commentCount; ?></i>
           <i id="commentsLogo" class="material-icons">&#xe0b9;</i>
         </i>
 

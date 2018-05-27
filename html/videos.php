@@ -1,8 +1,14 @@
 <?php
   session_start();
   $API_key = 'AIzaSyBS2yY5JobnjSKnANIUdIrEXyQJ2ELnGbQ';
-  $querry = 'psi';
-  $videoList = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=id&maxResults=5&q='.$querry.'&type=video&key='.$API_key));
+  if(isset($_GET['search'])){
+    $_SESSION['querry'] = $_GET['search'];
+  }
+  else {
+    $_SESSION['querry'] = 'learn';
+  }
+  //echo "<script>console.log( 'Debug Objects: " . $querry . "' );</script>";
+  $videoList = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=id&maxResults=5&q='.$_SESSION['querry'].'&type=video&key='.$API_key));
   $_SESSION['tokenToNextPage'] = $videoList->nextPageToken;
 ?>
 <html>
@@ -123,9 +129,13 @@
         <div class="content">
 
          <div class="subtitle"><h1>Recomanded for you !</h1></div>
-         <center>
-         <div id="container">
 
+         <center>
+           <form action="videos.php" method="GET">
+             <input name="search" type="text" class="searchTerm" placeholder="What are you looking for?">
+             <button type="submit" class="searchButton">Submit</button>
+           </form>
+         <div id="container">
              <?php
              foreach($videoList->items as $item){
               //Embed video
@@ -135,13 +145,11 @@
 
                   if(isset($videoInfo->items[0]->statistics->commentCount))
                   {
-                  echo '<div class="videoContainer">
-                          <a href="displayVideo.html">
+                  echo '<div class="videoContainer" onclick="window.location.href = \'displayVideo.php?idOfVideo='.$item->id->videoId.'\'">
                             <div class="video">
                             <img src="https://img.youtube.com/vi/'.$item->id->videoId.'/0.jpg" alt="video thumbnail">
                             <i class="fa">&#xf04b;</i>
                             </div>
-                          </a>
                             <div class="description">
                               <h1 class="descriptionTitle">'.$videoTitle->items[0]->snippet->title.'</h1>
                               <div class="views">
@@ -155,13 +163,11 @@
                             </div>
                         </div>';
                   } else {
-                    echo '<div class="videoContainer">
-                            <a href="displayVideo.html">
+                    echo '<div class="videoContainer" onclick="window.location.href = \'displayVideo.php?idOfVideo='.$item->id->videoId.'\'">
                               <div class="video">
                               <img src="https://img.youtube.com/vi/'.$item->id->videoId.'/0.jpg" alt="video thumbnail">
                               <i class="fa">&#xf04b;</i>
                               </div>
-                            </a>
                               <div class="description">
                                 <h1 class="descriptionTitle">'.$videoTitle->items[0]->snippet->title.'</h1>
                                 <div class="views">
@@ -233,9 +239,9 @@
             <script src="../javascript/template.js"></script>
             <script type="text/javascript">
               $(window).scroll(function () {
-                console.log("scolling...");
-                console.log($(window).scrollTop());
-                console.log($(document).height() - $(window).height());
+                //console.log("scolling...");
+                //console.log($(window).scrollTop());
+                //console.log($(document).height() - $(window).height());
                 if ($(window).scrollTop() >= $(document).height() - $(window).height())
                 {
                       $.ajax({
@@ -246,6 +252,11 @@
                         }
                       });
                 }
+              });
+            </script>
+            <script>
+              $(document).ready(function() {
+
               });
             </script>
 </body>
