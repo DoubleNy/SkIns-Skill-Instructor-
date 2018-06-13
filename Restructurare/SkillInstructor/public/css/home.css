@@ -78,11 +78,19 @@ body{
     right:-200px;
     z-index: 10;
 }
+
 #h7{
     white-space: nowrap;
     top:330px;
     right: -200px;
     z-index: 10;
+}
+#h8{
+  white-space: nowrap;
+  top:190px;
+  right:-200px;
+  z-index: 20;
+  display : none;
 }
 
 .hexagon {
