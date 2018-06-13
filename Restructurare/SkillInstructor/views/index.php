@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -23,9 +24,10 @@
           </video>
       </div>
 
+
         <div class="A_content">
           <h1>Where Your Skills<br>
-          Goes to Grow</h1>
+          Go to Grow</h1>
         </div>
 
 <?php require_once 'menu.php'; ?>
