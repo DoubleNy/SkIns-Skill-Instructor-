@@ -1,0 +1,300 @@
+.social-bar li{
+		display: inline;
+}
+
+.social-bar [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 30px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+		text-decoration: none;
+}
+a:visited{
+		background-color: #333;
+}
+
+a.fa.fa-facebook:hover,
+a.fa.fa-instagram:hover,
+a.fa.fa-twitter:hover,
+a.fa.fa-github:hover{
+		background-color: var(--color3);
+		color:black;
+}
+
+.copyright{
+		position: relative;
+		bottom:0;
+		height: 30px;
+		background-color: #23262a;
+		color: #707b80;
+		font-size: 13px;
+		padding-top: 20px;
+		padding-left: 30px;
+		font-weight: normal;
+}
+.lista-contact1{
+		display: inline-block;
+		list-style-type:none;
+		padding-right: 0;
+		padding-left: 0;
+		width:45%;
+		margin: 0;
+
+}
+.lista-contact2{
+		list-style-type:none;
+		padding-right: 0;
+		padding-left: 0;
+		width:50%;
+		display: inline-block;
+		margin: 0;
+
+}
+
+.c1{
+		font-weight: 100;
+		color: #707b80;
+		font-size: 15px;
+		text-decoration: none;
+}
+.c2{
+		font-weight: 100;
+		color: white;
+		font-size: 15px;
+		margin-top: -7px;
+}
+
+
+#imageSlider {
+  height: 80%;
+  background-image: url("../images/wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.div1{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-distributed {
+  --position: relative;
+  height: 150px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0 15px;
+  background-color: #292c2f;
+  text-align: left;
+  font: bold 16px sans-serif;
+}
+.footer-distributed .footer-left{
+    width:20%;
+
+}
+.footer-distributed .footer-center{
+    width:57%;
+
+
+}
+.footer-distributed .footer-right{
+    width:18%;
+
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-left h3{
+  color: #ffffff;
+	padding-left: 20%;
+  font: normal 30px 'Cookie', cursive;
+}
+
+.footer-left h3 span{
+  color: var(--color3);
+}
+
+.title{
+  font: 14px/20px sharp_sans_no1bold, sans-serif;
+  display: block;
+  margin-bottom: 29px;
+  color: var(--color3);
+}
+
+
+
+
+
+.container1 {
+    top:40px;
+    left:30px;
+    position:fixed;
+    display: inline-block;
+    cursor: pointer;
+		z-index: 2;
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+		border: 1px solid white;
+		box-sizing: border-box;
+    /*position:fixed;*/
+}
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.slide-right #active1 {
+  animation: my_move1  2s ease forwards;
+}
+@keyframes my_move1 {
+  from {top:140px;left:-70px;}
+  to {top:140px;left:70px;}
+}
+
+.slide-right #h2 {
+  animation: my_move2  1s ease forwards;
+}
+@keyframes my_move2 {
+  from {top:210px;left:-110px;}
+  to {top:210px;left:110px;}
+}
+
+
+.slide-right #h3 {
+  animation: mymove3  2s ease forwards;
+}
+@keyframes mymove3 {
+  from {top:280px;left:-70px;}
+  to {top:280px;left:70px;}
+}
+
+.slide-right #h4 {
+  animation: mymove4  1s ease forwards;
+}
+@keyframes mymove4 {
+  from {top:350px;left:-110px;}
+  to {top:350px;left:110px;}
+}
+
+.slide-right #h5 {
+  animation: mymove5  2s ease forwards;
+}
+@keyframes mymove5 {
+  from {top:420px;left:-70px;}
+  to {top:420px;left:70px;}
+}
+
+.slide-right #h6 {
+  animation: mymove6  1s ease forwards;
+}
+@keyframes mymove6 {
+  from {top:210px;right:-200px;}
+  to {top:210px;right:30px;}
+}
+
+.slide-right #h7 {
+  animation: mymove7  1s ease forwards;
+}
+@keyframes mymove7 {
+  from {top:350px;right:-200px;}
+  to {top:350px;right:30px;}
+}
+
+
+.slide-right #h8 {
+  animation: mymove8  1s ease forwards;
+}
+@keyframes mymove8 {
+  from {top:210px;right:-200px;}
+  to {top:210px;right:30px;}
+}
+
+.slide-left #active1 {
+  animation: move1  2s ease forwards;
+}
+@keyframes move1 {
+  from {top:140px;left:70px;}
+  to {top:140px;left:-70px;}
+}
+
+.slide-left #h2 {
+  animation: move2  1s ease forwards;
+}
+@keyframes move2 {
+  from {top:210px;left:110px;}
+  to {top:210px;left:-110px;}
+}
+
+
+.slide-left #h3 {
+  animation: move3  2s ease forwards;
+}
+@keyframes move3 {
+  from {top:280px;left:70px;}
+  to {top:280px;left:-70px;}
+}
+
+
+.slide-left #h4 {
+  animation: move4  1s ease forwards;
+}
+@keyframes move4 {
+  from {top:350px;left:110px;}
+}
+
+.slide-left #h5 {
+  animation: move5  2s ease forwards;
+}
+@keyframes move5 {
+  from {top:420px;left:70px;}
+  to {top:420px;left:-70px;}
+}
+
+.slide-left #h6 {
+  animation: move6  1s ease forwards;
+}
+@keyframes move6 {
+  from {top:210px;right:30px;}
+  to {top:210px;right:-200px;}
+}
+
+.slide-left #h7 {
+  animation: move7  1s ease forwards;
+}
+@keyframes move7 {
+  from {top:350px;right:30px;}
+  to {top:350px;right:-200px;}
+}
+
+.slide-left #h8 {
+  animation: move8  1s ease forwards;
+}
+@keyframes move8 {
+  from {top:210px;right:30px;}
+  to {top:210px;right:-200px;}
+}
