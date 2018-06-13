@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color4);
+  font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: var(--color1);
+}
+
+#imageSlider {
+  height: 80%;
+  background-image: url("../images/wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Navbar-ul  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.navbar1 {
+  position:fixed;
+  width:100%;
+  z-index:100;
+  top: 0;
+  background-color: var(--color5);
+  color: white;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  text-align: center;
+}
+.dropdown-hover1 {
+  display:inline-block;
+  cursor:pointer;
+  float:center;
+}
+.button1 {
+  padding:12px 24px!important;
+  border:none;
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:normal;
+}
+.button1:hover {
+  background-color: var(--color3);
+  color: black;
+}
+
+.dropdown-hover1:hover .dropdown-content1 {
+  display:block;
+}
+.dropdown-content1 {
+  cursor:auto;
+  color:white;
+  background-color:var(--color2);
+  display:none;
+  position:absolute;
+  width:100px;
+  margin:0;
+  padding:0;
+  z-index:100;
+}
+.bar-item1 {
+  transition: color 1s, background-color 1s;
+  -webkit-transition: color 1s, background-color 1s;
+  padding:8px 16px;
+  float:center;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  text-align: center;
+}
+.bar-block1 .bar-item1 {
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  border:none;
+  white-space:normal;
+  float:none;
+  outline:0;
+}
+.bar-item1 :hover {
+  color: var(--color2);
+  background-color: var(--color3);
+  transition: color 0.3s, background-color 0.3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Subtitluri ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.subtitle {
+  text-align: center;
+  color: var(--color2);
+  padding: 50px 0px;
+  background-color: var(--color5);
+  font-size: 20px;
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.subtitle::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: var(--color5);
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Video Container  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#container {
+  width: 84%;
+  margin: 0px auto;
+  margin-bottom: 40px;
+  padding: 3%;
+  padding-top: 5%;
+  max-width: 1500px;
+}
+
+.videoContainer {
+  display: inline-block;
+  width: 210px;
+  height: 203px;
+  background-color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.video {
+  width: 210px;
+  height: 117.5px;
+}
+
+.video i {
+  transform: translateY(-80px);
+  font-size:40px;
+  color:white;
+  display: none;
+}
+
+.video img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.videoContainer:hover {
+  box-shadow: 0 15px 15px var(--color5);
+}
+
+.videoContainer:hover .video i {
+  display: inline-block;
+}
+.videoContainer:hover .video img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.description {
+  width: 204px;
+  height: 79.5px;
+  color: var(--color5);
+  padding: 3px;
+}
+
+.descriptionTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  font-size: 15px;
+  color: black;
+}
+
+.views {
+  width: 20px;
+  height: 20px;
+  /*background-color: red;*/
+  position: relative;
+  left: -40%;
+  bottom: -40%;
+}
+
+.comments {
+  width: 20px;
+  height: 20px;
+  /*background-color: red;*/
+  position: relative;
+  left: calc(40% - 40px);
+  bottom: calc(-40% + 20px);
+}
+
+.viewsCount {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: calc(-40% + 20px);
+  bottom: calc(-40% + 40px);
+}
+
+.commentsCount {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: calc(40% - 20px);
+  bottom: calc(-40% + 60px);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Customize scrollbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #CDD9DA;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#CDD9DA,var(--color3),#CDD9DA);
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Import menu  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#navbar{
+  visibility: visible;
+}
+
+#navbar .hexagon{
+  opacity: 1;
+}
+#active1{
+    top:120px;
+    left:-70px;
+    z-index: 102;
+}
+
+#h2{
+    top:190px;
+    left:-110px;
+    z-index: 102;
+}
+#h3{
+    top:260px;
+    left:-70px;
+    z-index: 102;
+}
+#h4{
+    top:330px;
+    left:-110px;
+    z-index: 102;
+}
+#h5{
+    top:400px;
+    left:-70px;
+    z-index: 102;
+}
+
+#h6{
+    white-space: nowrap;
+    top:190px;
+    right:-200px;
+    z-index: 102;
+}
+#h7{
+    white-space: nowrap;
+    top:330px;
+    right: -200px;
+    z-index: 102;
+}
+
+.hexagon {
+  width: 70px;
+  height: 40px;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  background: black;
+}
+.hexagon::before,
+.hexagon::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.hexagon::before {
+  background: var(--color3);
+  transform: rotate(60deg);
+}
+.hexagon::after {
+  background: var(--color3);
+  transform: rotate(120deg);
+}
+.hexagon,
+.hexagon::after,
+.hexagon::before {
+  background: var(--color3);
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.hexagon:hover {
+  --color3: var(--color6);
+}
+.hexagon:hover > .buttonName {
+    /*color:white;*/
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+#active1.hexagon,
+#active1.hexagon::after,
+#active1.hexagon::before {
+  background: var(--color6);
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+
+.buttonName{
+  position: absolute;
+  z-index: 101;
+  color:var(--color2);
+  top: 20px;
+  left: 35px;
+  transform: translate(-50%,-50%);
+}
+h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.c1 {
+  padding: 20px;
+}

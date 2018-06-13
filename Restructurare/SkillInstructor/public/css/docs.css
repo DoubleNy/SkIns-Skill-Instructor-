@@ -1,0 +1,145 @@
+.infoDocument {
+  width: 90%;
+  max-width: 960px;
+  height: 400px;
+  background-color: var(--color5);
+  margin: 50px auto;
+  box-shadow: 0 25px 30px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+.content {
+  width: calc(50% - 50px);
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--color5);
+  padding: 30px;
+  color: white;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: var(--color3);
+  padding: 10px;
+  text-decoration: none;
+  color: var(--color2);
+  font-weight: bold;
+  border-radius: 4px;
+}
+.button:active,
+.button:visited {
+  background-color: var(--color3);
+}
+.button:hover {
+  background-color: var(--color6);
+}
+
+.imageBox {
+  width: calc(50% + 50px);
+  height: 100%;
+  box-sizing: border-box;
+  background: red;
+  border-left: 100px solid var(--color5);
+  border-bottom: 400px solid transparent;
+  background: url("../images/docpic.jpg");
+  background-position: -100px -150px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Navbar-ul  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.navbar1 {
+  position:fixed;
+  width:100%;
+  z-index:100;
+  top: 0;
+  background-color: var(--color5);
+  color: white;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  text-align: center;
+}
+.dropdown-hover1 {
+  display:inline-block;
+  cursor:pointer;
+  float:center;
+}
+.button1 {
+  padding:12px 24px!important;
+  border:none;
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:normal;
+}
+.button1:hover {
+  background-color: var(--color3);
+  color: black;
+}
+
+.dropdown-hover1:hover .dropdown-content1 {
+  display:block;
+}
+.dropdown-content1 {
+  cursor:auto;
+  color:white;
+  background-color:var(--color2);
+  display:none;
+  position:absolute;
+  width:100px;
+  margin:0;
+  padding:0;
+  z-index:100;
+}
+.bar-item1 {
+  transition: color 1s, background-color 1s;
+  -webkit-transition: color 1s, background-color 1s;
+  padding:8px 16px;
+  float:center;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  text-align: center;
+}
+.bar-block1 .bar-item1 {
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  border:none;
+  white-space:normal;
+  float:none;
+  outline:0;
+}
+.bar-item1 :hover {
+  color: var(--color2);
+  background-color: var(--color3);
+  transition: color 0.3s, background-color 0.3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+}
+
+@media screen and (min-width:400px) and (max-width:1000px) {
+  .infoDocument {
+    height: 300px;
+  }
+  .imageBox {
+    border-bottom: 300px solid transparent;
+  }
+  .content p{
+    display: none;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width:500px) {
+  .content h1{
+    font-size: 20px;
+  }
+  .button {
+    width: 50px;
+    height: 20px;
+  }
+}
