@@ -3,8 +3,11 @@ require 'libs/View.php';
 class Controller {
 
     public static function ytSession() {
-      session_start();
 
+      if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+      }
+      
       $_SESSION['API_key'] = 'AIzaSyBS2yY5JobnjSKnANIUdIrEXyQJ2ELnGbQ';
     }
 

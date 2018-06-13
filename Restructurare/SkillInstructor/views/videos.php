@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <?php $videoList = Controller::interogateYtApi("learn"); ?>
 
 <html>

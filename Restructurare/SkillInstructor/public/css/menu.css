@@ -225,15 +225,6 @@ a.fa.fa-github:hover{
   to {top:350px;right:30px;}
 }
 
-
-.slide-right #h8 {
-  animation: mymove8  1s ease forwards;
-}
-@keyframes mymove8 {
-  from {top:210px;right:-200px;}
-  to {top:210px;right:30px;}
-}
-
 .slide-left #active1 {
   animation: move1  2s ease forwards;
 }
@@ -289,12 +280,4 @@ a.fa.fa-github:hover{
 @keyframes move7 {
   from {top:350px;right:30px;}
   to {top:350px;right:-200px;}
-}
-
-.slide-left #h8 {
-  animation: move8  1s ease forwards;
-}
-@keyframes move8 {
-  from {top:210px;right:30px;}
-  to {top:210px;right:-200px;}
 }

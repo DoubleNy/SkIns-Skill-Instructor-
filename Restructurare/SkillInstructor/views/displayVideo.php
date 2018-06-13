@@ -99,10 +99,35 @@ require_once 'categories.php';
     </div>
 
     <div id="DVrecomandedVideos">
+      <p>Recomanded for you</p>
 
+        <?php $videoList = Controller::interogateYtApi("learn");
+
+
+        foreach($videoList->items as $item){
+         //Embed video
+           if(isset($item->id->videoId)){
+             $videoTitle = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=snippet&id='.$item->id->videoId.'&key='.$_SESSION['API_key']));
+             $videoInfo = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=statistics&id='.$item->id->videoId.'&key='.$_SESSION['API_key']));
+
+             echo '<div class="DVrecomandedVideo" onclick="window.location.href = \'displayVideo?idOfVideo='.$item->id->videoId.'\'">
+                       <div class="DVvideo">
+                       <img src="https://img.youtube.com/vi/'.$item->id->videoId.'/0.jpg" alt="video thumbnail">
+                       </div>
+                       <div class="DVdescription">
+                         <h1 class="DVdescriptionTitle">'.$videoTitle->items[0]->snippet->title.'</h1>
+                       </div>
+                   </div>
+                  <div style="clear:both;"></div>'
+                   ;
+           }
+         }
+         ?>
+
+      </div>
     </div>
 
-    <div style="height:10px;width:100%;display:block">
+    <div style="clear:both;">
     </div>
 </div>
 

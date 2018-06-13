@@ -117,7 +117,22 @@
   box-sizing: border-box;
   display: inline-block;
   width: 29%;
-  background-color: black;
-  height: 100px;
   float: left;
+  margin-top: 30px;
+}
+
+#DVrecomandedVideos p {
+  text-align: center;
+}
+
+.DVvideo img{
+  height: 80px;
+}
+
+#DVrecomandedVideo:hover {
+  cursor: pointer;
+}
+
+.DVdescription h1{
+  font-size: 15px;
 }

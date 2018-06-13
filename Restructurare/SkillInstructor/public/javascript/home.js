@@ -7,23 +7,6 @@ function sleep(milliseconds) {
   }
 }
 
-function logout(){
-  //window.alert("aa");
-  var val = "true";
-  $.ajax({
-      type: "POST",
-      url: "logout/makeLogout",
-      data: ({val : val}),
-      success: function(rs){
-        //alert(rs);
-      },
-      error: function(xhr, textStatus, errorThrown){
-       //alert(errorThrown);
-    }
-
-  });
-}
-
 function myFunction(x) {
     x.classList.toggle("change");
     var menu=document.getElementById('navbar');
