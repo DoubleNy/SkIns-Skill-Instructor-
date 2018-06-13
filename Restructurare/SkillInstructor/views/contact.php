@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 
   <head>
@@ -35,7 +36,7 @@
             <div class="cos_50per" id="map"></div>
 
             <div class="cos_100per" style="height:380">
-                  <form class="cos_form">
+                  <form class="cos_form" method="post">
                     <div class="cos_form_row">
                         <label class="cos_label">Name</label>
                         <input class="cos_input" type="text" name="Name" required>
@@ -49,7 +50,7 @@
                           <input class="cos_input" type="text" name="Message" required>
                     </div>
                     <div>
-                      <button class="cos_send_button" type="submit">Send</button>
+                      <button class="cos_send_button" type="submit" name="Submit">Send</button>
                     </div>
                   </form>
             </div>
