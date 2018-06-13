@@ -1,12 +1,11 @@
 <?php
 	require 'libs/Controller.php';
 
-	class videosController extends Controller
+	class contactController extends Controller
 	{
-
 		public function index()
 		{
-			$this->view->render('videos');
+			$this->view->render('contact');
 		}
 	}
 ?>
