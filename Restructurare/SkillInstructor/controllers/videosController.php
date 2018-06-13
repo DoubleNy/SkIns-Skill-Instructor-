@@ -3,6 +3,7 @@
 
 	class videosController extends Controller
 	{
+
 		public function index()
 		{
 			$this->view->render('videos');

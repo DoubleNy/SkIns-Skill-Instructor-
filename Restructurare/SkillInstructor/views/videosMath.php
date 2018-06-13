@@ -1,4 +1,4 @@
-<?php $videoList = Controller::interogateYtApi("learn"); ?>
+<?php $videoList = Controller::interogateYtApi("math"); ?>
 
 <html>
 <head>
@@ -24,7 +24,7 @@
 
 <div class="content">
 
- <div class="subtitle"><h1>Recomanded for you !</h1></div>
+ <div class="subtitle"><h1>Math</h1></div>
 
  <center>
    <!--<form action="videos.php" method="GET">

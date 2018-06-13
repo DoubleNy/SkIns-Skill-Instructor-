@@ -37,6 +37,8 @@
 	    {
 	        $file = $this->_controllerPath . $this->_url[0] . 'Controller.php';
 
+					//echo $file;
+
 	        if (file_exists($file)) {
 	            require $file;
 	            $className = $this->_url[0].'Controller';
