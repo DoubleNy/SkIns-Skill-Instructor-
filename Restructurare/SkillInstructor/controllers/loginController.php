@@ -1,10 +1,8 @@
 <?php
-require 'libs/Controller.php';
-require 'models/loginModel.php';
+	require 'libs/Controller.php';
 
 	class loginController extends Controller
 	{
-		protected $loginModel;
 		public function index()
 		{
 			$this->view->render('login');
