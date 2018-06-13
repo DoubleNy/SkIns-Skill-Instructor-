@@ -46,5 +46,4 @@
 
 <script src="public/javascript/slideshow.js"></script>
 </body>
-
 </html>

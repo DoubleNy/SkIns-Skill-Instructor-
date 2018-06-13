@@ -24,9 +24,9 @@
 <div class="wrapper">
 <div class="container">
   <h1>Welcome</h1>
-  <form method="post" action="login/makeLogin" class="form" accept-charset='UTF-8'>
-    <input type="text" placeholder="Username" id="username" name="username">
-    <input type="password" placeholder="Password" id="password" name="password">
+  <form class="form">
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
     <button type="submit" id="login-button"><b>Login</b></button>
   </form>
 </div>
