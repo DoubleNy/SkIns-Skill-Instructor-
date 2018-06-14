@@ -3,9 +3,9 @@
 <div class="dropdown-hover1">
   <button class="button1" onclick="microMath()" title="More">Math</button>
   <div class="dropdown-content1 bar-block1">
-    <a href="videosMath" class="bar-item1 button1">Beginner</a>
-    <a href="videosMath" class="bar-item1 button1">Medium</a>
-    <a href="videosMath" class="bar-item1 button1">Advanced</a>
+    <a href="beginner" class="bar-item1 button1">Beginner</a>
+    <a href="medium" class="bar-item1 button1">Medium</a>
+    <a href="advanced" class="bar-item1 button1">Advanced</a>
   </div>
 </div>
 <div class="dropdown-hover1">
