@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <div class="navbar1">
 <div class="dropdown-hover1">
   <a href="videosMath"><button class="button1" title="More">Math</button></a>
@@ -27,11 +25,11 @@ session_start();
   </div>
 </div>
 <div class="dropdown-hover1">
-  <button class="button1" title="More">Survival</button>
+  <a href=""><button class="button1" onclick="microSurival()" title="More">Survival</button>
   <div class="dropdown-content1 bar-block1">
-    <a href="./videosCategory.html" class="bar-item1 button1">In Jungle</a>
-    <a href="./videosCategory.html" class="bar-item1 button1">In Dorm</a>
-    <a href="./videosCategory.html" class="bar-item1 button1">In Cosmic Vehicle</a>
+    <a href="./videosCategory.html" class="bar-item1 button1">Beginner</a>
+    <a href="./videosCategory.html" class="bar-item1 button1">Medium</a>
+    <a href="./videosCategory.html" class="bar-item1 button1">Advanced</a>
   </div>
 </div>
 </div>

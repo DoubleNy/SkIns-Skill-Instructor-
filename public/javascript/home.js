@@ -24,6 +24,7 @@ function logout(){
   });
 }
 
+
 function myFunction(x) {
     x.classList.toggle("change");
     var menu=document.getElementById('navbar');
@@ -74,4 +75,18 @@ function myFunction(x) {
           //logare.style.display = "block";
           //logare.classList.toggle("sign-up-forward");
       }
+}
+
+function microSurival(){
+    //window.alert("aa");
+    $.ajax({
+        type: "POST",
+        url: "videosSurvival/getSurvivalJson",
+        success: function(rs){
+          //var obj = json.parse(obj);
+          window.alert(rs);
+        },
+        error: function(xhr, textStatus, errorThrown){
+        }
+    });
 }

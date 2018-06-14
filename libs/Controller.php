@@ -7,7 +7,7 @@ class Controller {
       if (session_status() == PHP_SESSION_NONE) {
         session_start();
       }
-      
+
       $_SESSION['API_key'] = 'AIzaSyBS2yY5JobnjSKnANIUdIrEXyQJ2ELnGbQ';
     }
 

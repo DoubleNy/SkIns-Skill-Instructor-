@@ -52,7 +52,7 @@ require_once 'categories.php';
         <div id="DVcommentSection">
 
 
-        <form>
+        <form method="post" action="displayVideo/addComment">
           <div id="DVformInput">
             <input type="text" name="comment" placeholder="Add a comment here ...">
           </div>

@@ -1,8 +1,15 @@
 <?php
 session_start();
 ?>
-<?php 
-$videoList = Controller::interogateYtApi("learn"); ?>
+<?php
+$query = "select id from videos where category = 'survival' ";
+if(videosSurvivalController::executeSelect($query)){
+    //echo "a";
+} else {
+    //$videoList = Controller::interogateYtApi("survival");
+    //videosSurvivalController::executeInsert($videoList);
+}
+?>
 
 <html>
 <head>
@@ -28,14 +35,13 @@ $videoList = Controller::interogateYtApi("learn"); ?>
 
 <div class="content">
 
- <div class="subtitle"><h1>Recomanded for you !</h1></div>
+ <div class="subtitle"><h1>Survival</h1></div>
 
  <center>
    <!--<form action="videos.php" method="GET">
      <input name="search" type="text" class="searchTerm" placeholder="What are you looking for?">
      <button type="submit" class="searchButton">Submit</button>
    </form>-->
-
  <div id="container">
      <?php
      foreach($videoList->items as $item){
