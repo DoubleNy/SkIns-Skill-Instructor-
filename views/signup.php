@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -23,11 +22,11 @@
 <div class="wrapper">
 <div class="container">
   <h1>Welcome</h1>
-  <form class="form">
-    <input type="text" placeholder="Username">
-    <input type="text" placeholder="email">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Re-type password">
+  <form method="post" action="signup/createUser" class="form" accept-charset='UTF-8'>
+    <input type="text" placeholder="Username" name="username">
+    <input type="text" placeholder="email" name="email">
+    <input type="password" placeholder="Password" name="password">
+    <input type="password" placeholder="Re-type password" name="retypePassword">
     <button type="submit" id="login-button"><b>Login</b></button>
   </form>
 </div>
