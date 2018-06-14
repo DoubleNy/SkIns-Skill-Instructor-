@@ -46,7 +46,7 @@ $videoList = Controller::interogateYtApi("learn"); ?>
 
           if(isset($videoInfo->items[0]->statistics->commentCount))
           {
-          echo '<div class="videoContainer" onclick="window.location.href = \'displayVideo.php?idOfVideo='.$item->id->videoId.'\'">
+          echo '<div class="videoContainer" onclick="window.location.href = \'displayVideo?idOfVideo='.$item->id->videoId.'\'">
                     <div class="video">
                     <img src="https://img.youtube.com/vi/'.$item->id->videoId.'/0.jpg" alt="video thumbnail">
                     <i class="fa">&#xf04b;</i>
@@ -64,7 +64,7 @@ $videoList = Controller::interogateYtApi("learn"); ?>
                     </div>
                 </div>';
           } else {
-            echo '<div class="videoContainer" onclick="window.location.href = \'displayVideo.php?idOfVideo='.$item->id->videoId.'\'">
+            echo '<div class="videoContainer" onclick="window.location.href = \'displayVideo?idOfVideo='.$item->id->videoId.'\'">
                       <div class="video">
                       <img src="https://img.youtube.com/vi/'.$item->id->videoId.'/0.jpg" alt="video thumbnail">
                       <i class="fa">&#xf04b;</i>

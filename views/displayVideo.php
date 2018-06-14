@@ -117,8 +117,8 @@ require_once 'categories.php';
                        <div class="DVdescription">
                          <h1 class="DVdescriptionTitle">'.$videoTitle->items[0]->snippet->title.'</h1>
                        </div>
-                   </div>
-                  <div style="clear:both;"></div>'
+                   </div>  <div style="clear:both;">
+                     </div>'
                    ;
            }
          }
@@ -129,7 +129,6 @@ require_once 'categories.php';
 
     <div style="clear:both;">
     </div>
-</div>
 
 
 <?php require_once 'footer.php'; ?>
