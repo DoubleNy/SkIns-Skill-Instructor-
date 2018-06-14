@@ -20,6 +20,25 @@ class Controller {
 
       return $videoList;
     }
+    public static function interogateWikiApi($wikiQuerry)
+    {
+      $wikiQuerry=ucwords($wikiQuerry);
+      $wikiApiURI='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles='.$wikiQuerry.'&redirects=true';
+      $wikiApiURI=str_replace(' ','%20',$wikiApiURI);
+      if($wikiJson=json_decode(file_get_contents($wikiApiURI)))
+      {
+          foreach($wikiJson->query->pages as $key=>$value)
+          {
+            $pageId=$key;
+            break;
+          }
+          echo $key;
+          echo $value->extract;
+
+
+      }
+
+    }
 
     function __construct() {
         $this->view = new View();

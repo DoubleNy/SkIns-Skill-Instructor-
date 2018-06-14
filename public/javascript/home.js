@@ -90,3 +90,17 @@ function microSurival(){
         }
     });
 }
+
+function microFitness(){
+  $.ajax({
+      type: "POST",
+      url: "videosFitness/getFitnessJson",
+      success: function(rs){
+            if(document.getElementById("centerOf").innerHTML.length <= 50){
+                document.getElementById("centerOf").innerHTML += rs;
+            }
+      },
+      error: function(xhr, textStatus, errorThrown){
+      }
+  });
+}

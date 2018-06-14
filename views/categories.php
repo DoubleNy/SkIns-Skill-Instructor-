@@ -32,4 +32,12 @@
     <a href="./videosCategory.html" class="bar-item1 button1">Advanced</a>
   </div>
 </div>
+<div class="dropdown-hover1">
+  <button class="button1" onclick="microFitness()" title="More">Fitness</button>
+  <div class="dropdown-content1 bar-block1">
+    <a href="./videosCategory.html" class="bar-item1 button1">Beginner</a>
+    <a href="./videosCategory.html" class="bar-item1 button1">Medium</a>
+    <a href="./videosCategory.html" class="bar-item1 button1">Advanced</a>
+  </div>
+</div>
 </div>

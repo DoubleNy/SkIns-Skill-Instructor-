@@ -26,7 +26,7 @@ session_start();
 
 <div class="content">
 
- <div class="subtitle"><h1>Survival</h1></div>
+ <div class="subtitle"><h1>Fitness</h1></div>
 
  <center id="centerOf">
 

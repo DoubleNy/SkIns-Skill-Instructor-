@@ -18,9 +18,12 @@
 
 
 <body>
-
+  <?php
+  Controller::interogateWikiApi('survival analysis');
+  ?>
   <?php require_once 'menu.php'; ?>
   <?php require_once 'slider.php'; ?>
+
 
 
   <ul class="infoList">
@@ -78,7 +81,7 @@
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
           <div class="flipper">
             <div class="front">
-              <figure><img src="../images/eagle.jpg" /> </figure>
+              <figure><img src="public/images/eagle.jpg" /> </figure>
             </div>
             <div class="back">
               <figure>
@@ -93,7 +96,7 @@
                         <li> <a href="https://github.com/DoubleNy/SkIns-Skill-Instructor" class="fa fa-github"> </a></li>
                     </ul>
                 </div>
-                <img src="../images/eagle.jpg" />
+                <img src="public/images/eagle.jpg" />
               </figure>
             </div>
           </div>
@@ -103,7 +106,7 @@
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
           <div class="flipper">
             <div class="front">
-              <figure><img src="../images/tiger.jpg" /> </figure>
+              <figure><img src="public/images/tiger.jpg" /> </figure>
             </div>
             <div class="back">
               <figure>
