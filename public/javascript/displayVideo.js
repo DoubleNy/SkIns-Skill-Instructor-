@@ -11,3 +11,19 @@ function myFunction() {
     }
   }
 }
+
+function addcomment() {
+  var user = document.getElementById("user").innerHTML;
+  var videoID = document.getElementById("videoid").innerHTML;
+  var comm = document.getElementById("comment").value;
+  //window.alert(user + " " + videoID + " " + comm);
+  $.ajax({
+    type: "POST",
+    url: 'displayVideo/addComment',
+    data: ({videoID : videoID, user : user, comm : comm}),
+    success: function(response) {
+        alert(response);
+    }
+  });
+
+}

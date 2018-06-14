@@ -10,6 +10,7 @@
     public function getFitnessJson(){
 				    $videoList = Controller::interogateYtApi("workout%20hiit%20mass");
 						//echo json_encode($videoList);
+						$_SESSION['category'] = "fitnesss";
 								echo '<div id="container">';
 								foreach($videoList->items as $item){
 								 //Embed video

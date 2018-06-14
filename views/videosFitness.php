@@ -18,7 +18,7 @@ session_start();
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 
-<body>
+<body onload="javascript:loadFitness()">
 
 <?php require_once 'menu.php'; ?>
 <?php require_once 'slider.php'; ?>

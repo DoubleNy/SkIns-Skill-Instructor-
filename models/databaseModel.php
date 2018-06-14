@@ -1,7 +1,7 @@
 <?php
 
 class DatabaseModel {
-    protected $conn;
+    public $conn;
     public function __construct()
     {
         $this->conn = $this->makeConn('localhost','root','','myDb');
@@ -22,15 +22,29 @@ class DatabaseModel {
         }
 
     }
-    public function executeSelect($query){
-        //echo $username . " " . $password;
+    public function insertVideo($category, $videoID){
+        $query = "SELECT count(*) FROM videos where category = ? and id = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$category,$videoID]);
+        $numar = 0;
+        while ($row = $statement->fetch()) {
+            $numar = (int)$row[0];
+        }
+        //
+        if($numar == 0){
+            $query = "insert into videos (category, id) values ('" . $category . "', '" . $videoID . "')";
+  	        $statement = $this->conn->prepare($query);
+  	        $statement->execute();
+        }
+    }
 
+    public function executeSelect($query){
         $statement = $this->conn->prepare($query);
         $statement->execute();
-        $result = $statement->fetchAll();
-        //print_r($result);
+        $result = $statement->fetch();
         return $result;
     }
+
     public function executeinsert($query){
         //echo $username . " " . $password;
         $statement = $this->conn->prepare($query);
@@ -39,7 +53,6 @@ class DatabaseModel {
         return $numar;
 
     }
-
 }
 
 

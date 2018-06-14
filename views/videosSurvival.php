@@ -18,7 +18,7 @@ session_start();
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 
-<body>
+<body onload="javascript:loadSurvival()">
 
 <?php require_once 'menu.php'; ?>
 <?php require_once 'slider.php'; ?>
@@ -29,7 +29,6 @@ session_start();
  <div class="subtitle"><h1>Survival</h1></div>
 
  <center id="centerOf">
-
  </center>
 <!--<script src="public/javascript/dynamicload.js"></script>-->
 

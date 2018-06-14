@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="public/javascript/videos.js"></script>
     <script src="public/javascript/home.js"></script>
+    <script src="public/javascript/displayVideo.js"></script>
 
   </head>
   <body>
@@ -49,23 +50,25 @@ require_once 'categories.php';
         <i id="DVcomments"><?php echo $videoInfo->items[0]->statistics->commentCount; ?></i>
       </div>
 
+
         <div id="DVcommentSection">
-
         <?php  if(isset($_SESSION['logged'])){
+            //
+            $user = $_SESSION['user'];
+            $videoID = $_GET['idOfVideo'];
+            $category = $_SESSION['category'];
+            displayVideoController::addVideo($videoID, $category);
+
             echo
-        '<form method="post" action="displayVideo/addComment">
-          <div id="DVformInput">
-            <input type="text" name="comment" placeholder="Add a comment here ...">
-          </div>
-          <div id="DVsendInput">
-            <input type="submit" name="submit" value="POST">
-          </div>
-        </form>';
+              '<div id="user" style="display: none;">'. $user .'</div>
+               <div id="videoid" style="display: none;">'. $videoID .'</div>
+                  <div id="DVformInput">
+                      <input type="text" id="comment" placeholder="Add a comment here ...">
+                  </div>
+                <button type="button" onclick="addcomment()" name="submit">Submit</button>
+              ';
+              //
       } ?>
-
-
-
-
         <div class="DVcomment">
           <div class="DVuser">
             <p>Nume autor</p>
@@ -113,7 +116,7 @@ require_once 'categories.php';
            if(isset($item->id->videoId)){
              $videoTitle = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=snippet&id='.$item->id->videoId.'&key='.$_SESSION['API_key']));
              $videoInfo = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=statistics&id='.$item->id->videoId.'&key='.$_SESSION['API_key']));
-
+             //
              echo '<div class="DVrecomandedVideo" onclick="window.location.href = \'displayVideo?idOfVideo='.$item->id->videoId.'\'">
                        <div class="DVvideo">
                        <img src="https://img.youtube.com/vi/'.$item->id->videoId.'/0.jpg" alt="video thumbnail">

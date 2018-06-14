@@ -77,21 +77,30 @@ function myFunction(x) {
       }
 }
 
-function microSurival(){
-    $.ajax({
-        type: "POST",
-        url: "videosSurvival/getSurvivalJson",
-        success: function(rs){
-              if(document.getElementById("centerOf").innerHTML.length <= 50){
-                  document.getElementById("centerOf").innerHTML += rs;
-              }
-        },
-        error: function(xhr, textStatus, errorThrown){
-        }
+function loadSurvival(){
+  $.ajax({
+      type: "POST",
+      url: "videosSurvival/getSurvivalJson",
+      success: function(rs){
+            if(document.getElementById("centerOf").innerHTML.length <= 50){
+                document.getElementById("centerOf").innerHTML += rs;
+            }
+      },
+      error: function(xhr, textStatus, errorThrown){
+      }
     });
 }
 
+function microSurival(){
+    window.location.href = 'videosSurvival';
+}
+
+
 function microFitness(){
+    window.location.href = 'videosFitness';
+}
+
+function loadFitness(){
   $.ajax({
       type: "POST",
       url: "videosFitness/getFitnessJson",
