@@ -31,9 +31,9 @@
 							return false;
 					}
 					$username=$_POST['username'];
-					$password=$_POST['password'];
+					$password=md5($_POST['password']);
 					$email = $_POST['email'];
-					$retyped = $_POST['retypePassword'];
+					$retyped = md5($_POST['retypePassword']);
 					//echo $username . " " . $password . " " . $email . " " . $retyped;
 					$log = new SignUpModel();
 					$UsedUsernam = $log -> verifyUser($username);

@@ -19,7 +19,9 @@
 
 <body>
   <?php
-  Controller::interogateWikiApi('survival analysis');
+  //echo Controller::drawDoc("Trie");
+  //echo Controller::getThumbnailWikiApi("Lionel Messi");
+  // echo Controller::truncateStringByParagraph(Controller::getHTMLWikiApi('Lionel Messi'));
   ?>
   <?php require_once 'menu.php'; ?>
   <?php require_once 'slider.php'; ?>

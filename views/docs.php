@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php session_start();
+//require 'controllers/docsController.php'?>
 <html>
 
   <head>
@@ -21,67 +22,12 @@
   <body>
     <?php require_once 'menu.php';?>
     <?php require_once 'slider.php';?>
-    <div class="infoDocument">
-      <div class="content">
-        <h1>Title of the document</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="./documentPreview.html" class="button">Read more ...</a>
-      </div>
-      <div class="imageBox">
-      </div>
-    </div>
 
-    <div class="infoDocument">
-      <div class="content">
-        <h1>Title of the document</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="./documentPreview.html" class="button">Read more ...</a>
-      </div>
-      <div class="imageBox">
-      </div>
-    </div>
 
-    <div class="infoDocument">
-      <div class="content">
-        <h1>Title of the document</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="./documentPreview.html" class="button">Read more ...</a>
-      </div>
-      <div class="imageBox">
-      </div>
-    </div>
+    <?php echo Controller::drawDoc("Trie");
+          echo Controller::drawDoc("integral");
+          echo Controller::drawDoc("Adobe");
+          echo Controller::drawDoc("Lionel Messi");
+    ?>
 
-    <div class="infoDocument">
-      <div class="content">
-        <h1>Title of the document</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="./documentPreview.html" class="button">Read more ...</a>
-      </div>
-      <div class="imageBox">
-      </div>
-    </div>
     <?php require_once 'footer.php'; ?>

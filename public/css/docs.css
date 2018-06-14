@@ -15,6 +15,14 @@
   background-color: var(--color5);
   padding: 30px;
   color: white;
+  overflow-y: scroll;
+
+}
+.content p{
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp:100;
+  -webkit-box-orient:vertical;
 }
 
 .button {
@@ -43,7 +51,8 @@
   border-left: 100px solid var(--color5);
   border-bottom: 400px solid transparent;
   background: url("../images/docpic.jpg");
-  background-position: -100px -150px;
+  //background-position: -100px -150px;
+  background-repeat: no-repeat;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Navbar-ul  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

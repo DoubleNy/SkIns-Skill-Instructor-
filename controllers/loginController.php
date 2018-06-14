@@ -8,6 +8,10 @@
 		{
 			$this->view->render('login');
 		}
+		public function encrypt($str)
+		{
+			return md5($str);
+		}
 		public function makeLogin()
 		{
 				if(empty($_POST['username']))
@@ -23,7 +27,7 @@
 						return false;
 				}
 				$username=$_POST['username'];
-				$password=$_POST['password'];
+				$password=$this->encrypt($_POST['password']);
 				//echo $username . " " . $password;
 				$log = new LoginModel();
 				$response = $log -> verifyLogin($username,$password);
