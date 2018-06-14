@@ -33,12 +33,11 @@ class DatabaseModel {
     }
     public function executeinsert($query){
         //echo $username . " " . $password;
-
         $statement = $this->conn->prepare($query);
         $statement->execute();
-        $result = $statement->fetchAll();
-        //print_r($result);
-        return $result;
+        $numar = 0;
+        return $numar;
+
     }
 
 }

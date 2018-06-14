@@ -51,15 +51,19 @@ require_once 'categories.php';
 
         <div id="DVcommentSection">
 
-
-        <form method="post" action="displayVideo/addComment">
+        <?php  if(isset($_SESSION['logged'])){
+            echo
+        '<form method="post" action="displayVideo/addComment">
           <div id="DVformInput">
             <input type="text" name="comment" placeholder="Add a comment here ...">
           </div>
           <div id="DVsendInput">
             <input type="submit" name="submit" value="POST">
           </div>
-        </form>
+        </form>';
+      } ?>
+
+
 
 
         <div class="DVcomment">
