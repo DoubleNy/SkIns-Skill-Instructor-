@@ -32,9 +32,24 @@ class DatabaseModel {
         }
         //
         if($numar == 0){
-            $query = "insert into videos (category, id) values ('" . $category . "', '" . $videoID . "')";
+            $nrviews = 1;
+            $query = "insert into videos (category, id) values ('" . $category . "', '" . $videoID . "', '" . $nrviews . "')";
   	        $statement = $this->conn->prepare($query);
   	        $statement->execute();
+        }
+        else {
+          $query = "SELECT nrviews FROM videos where category = ? and id = ?";
+          $statement = $this->conn->prepare($query);
+          $statement->execute([$category,$videoID]);
+          $numarviews = 0;
+          while ($row = $statement->fetch()) {
+              $numarviews = (int)$row[0];
+          }
+          $numarviews = $numarviews + 1;
+          //echo $numarviews;
+          $query = "update videos set nrviews = " . $numarviews . " where category = ? and id = ?";
+          $statement = $this->conn->prepare($query);
+          $statement->execute([$category,$videoID]);
         }
     }
 
