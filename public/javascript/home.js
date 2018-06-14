@@ -78,13 +78,13 @@ function myFunction(x) {
 }
 
 function microSurival(){
-    //window.alert("aa");
     $.ajax({
         type: "POST",
         url: "videosSurvival/getSurvivalJson",
         success: function(rs){
-          //var obj = json.parse(obj);
-          window.alert(rs);
+              if(document.getElementById("centerOf").innerHTML.length <= 50){
+                  document.getElementById("centerOf").innerHTML += rs;
+              }
         },
         error: function(xhr, textStatus, errorThrown){
         }

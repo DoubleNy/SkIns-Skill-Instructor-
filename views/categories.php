@@ -1,7 +1,7 @@
 
 <div class="navbar1">
 <div class="dropdown-hover1">
-  <a href="videosMath"><button class="button1" title="More">Math</button></a>
+  <button class="button1" title="More">Math</button>
   <div class="dropdown-content1 bar-block1">
     <a href="videosMath" class="bar-item1 button1">Geometry</a>
     <a href="videosMath" class="bar-item1 button1">Trigonometry</a>
@@ -25,7 +25,7 @@
   </div>
 </div>
 <div class="dropdown-hover1">
-  <a href=""><button class="button1" onclick="microSurival()" title="More">Survival</button>
+  <button class="button1" onclick="microSurival()" title="More">Survival</button>
   <div class="dropdown-content1 bar-block1">
     <a href="./videosCategory.html" class="bar-item1 button1">Beginner</a>
     <a href="./videosCategory.html" class="bar-item1 button1">Medium</a>
