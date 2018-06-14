@@ -70,11 +70,6 @@
 				$mailFrom="skillinstructor2018@gmail.com";
 				$message="Bun venit. Datele contului tau sunt Username :  " . $this->username . ",  Parola: " . $this->password;
 				$mailTo=$this->username;
-				//$headers="From: ".$mailFrom;
-				//mail($mailTo,"SKINS",$txt,$headers);
-				//header("Location: /SkillInstructor/contact");
-				//echo "<script>console.log( 'Debug Objects: " . $this->$mail . " " . $this->$username . "' );</script>";
-				//echo $this->username . " " . $this->email;
 				$mail = new PHPMailer(); // create a new object
 				$mail->IsSMTP(); // enable SMTP
 				$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only

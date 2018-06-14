@@ -15,7 +15,7 @@ class Controller {
 
         self::ytSession();
         $_SESSION['querry'] = $ytQuerry;
-        $videoList = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=id&maxResults=5&q='.$_SESSION['querry'].'&type=video&key='.$_SESSION['API_key']));
+        $videoList = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=id&maxResults=10&q='.$_SESSION['querry'].'&type=video&key='.$_SESSION['API_key']));
         $_SESSION['tokenToNextPage'] = $videoList->nextPageToken;
 
       return $videoList;
