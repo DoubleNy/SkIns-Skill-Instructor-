@@ -22,7 +22,7 @@ function addcomment() {
     url: 'displayVideo/addComment',
     data: ({videoID : videoID, user : user, comm : comm}),
     success: function(response) {
-        alert(response);
+      location.reload();
     }
   });
 

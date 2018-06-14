@@ -67,6 +67,8 @@ require_once 'categories.php';
                   </div>
                 <button type="button" onclick="addcomment()" name="submit">Submit</button>
               ';
+              displayVideoController::loadComments($_GET['idOfVideo'], $_SESSION['user']);
+
               //
       } ?>
         <div class="DVcomment">

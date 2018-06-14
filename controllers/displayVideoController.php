@@ -16,6 +16,50 @@
 			//
 		}
 
+		public static function loadComments($videoID, $username){
+					$exec = new DatabaseModel();
+					$query = "select videoID from videos where id = ?";
+					$statement = $exec->conn->prepare($query);
+					$statement->execute([$videoID]);
+					//echo $videoID;
+					$id = 0;
+					while($row = $statement->fetch()){
+								$id = (int)$row[0];
+					}
+					//
+					//echo $id;
+					//
+					$query = "select userID, text, time from videoComm where videoId = ?";
+					$statement = $exec->conn->prepare($query);
+					$statement->execute([$id]);
+					while($row = $statement->fetch()){
+							//print_r($row['text']);
+							//print_r($row['time']);
+							//print_r($row['userID']);
+							$userNume;
+							$query2 = "select username from users where id = ?";
+							$statement2 = $exec->conn->prepare($query2);
+							$statement2->execute([$row['userID']]);
+							while($row2 = $statement2->fetch()){
+									$userNume = $row2[0];
+							}
+							echo '<div class="DVcomment">
+							          <div class="DVuser">
+							            <p>'. $userNume .'</p>
+							          </div>
+							          <div class="DVdateComment">
+							            <p>'. $row['time'] .'</p>
+							          </div>
+							          <div class="DVuserComment">
+							            <p>'. $row['text'] .'</p>
+							          </div>
+							       </div>';
+					}
+
+
+
+		}
+
 		public function addComment()
 		{
 
@@ -50,9 +94,22 @@
 			$time = date("Y/m/d");
 			echo $idVideo;
 			//$array=array("Volvo","BMW","Toyota");
-			$query = "insert into videocomm (videoid, userid, text, time) values (?, ?, ?, ?)";
+			$query = "insert into videoComm (videoid, userid, text, time) values (?, ?, ?, ?)";
 			$statement = $exec->conn->prepare($query);
 			$statement->execute([$idVideo, $userID, $comment, $time]);
+			//header("Refresh:0");
+			//$this->loadComments($idVideo, $userID);
+			/*echo '<div class="DVcomment">
+								<div class="DVuser">
+									<p>'. $_SESSION['user'] .'</p>
+								</div>
+								<div class="DVdateComment">
+									<p>'. $time .'</p>
+								</div>
+								<div class="DVuserComment">
+									<p>'. $comment .'</p>
+								</div>
+						 </div>';*/
 			//echo $query;
 			//$exec->executeinsert($query);
 		}

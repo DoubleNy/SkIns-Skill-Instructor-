@@ -20,7 +20,6 @@ class DatabaseModel {
         } catch (PDOException $e) {
             echo "Conectarea la baza de date a esuat." . $e->getMessage();
         }
-
     }
     public function insertVideo($category, $videoID){
         $query = "SELECT count(*) FROM videos where category = ? and id = ?";
@@ -33,7 +32,7 @@ class DatabaseModel {
         //
         if($numar == 0){
             $nrviews = 1;
-            $query = "insert into videos (category, id) values ('" . $category . "', '" . $videoID . "', '" . $nrviews . "')";
+            $query = "insert into videos (category, id, nrviews) values ('" . $category . "', '" . $videoID . "', '" . $nrviews . "')";
   	        $statement = $this->conn->prepare($query);
   	        $statement->execute();
         }
