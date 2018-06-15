@@ -39,7 +39,7 @@ class docsModel{
     $statement = $this->conn->prepare($query);
     $statement->execute([$category,$document]);
     $documents=[];
-    $row = $statement->fetch())
+    $row = $statement->fetch();
     return $row[0];
 
   }
@@ -47,5 +47,5 @@ class docsModel{
 
 
 
-}
+
 ?>

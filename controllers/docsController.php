@@ -84,7 +84,6 @@
 
 			</div>';
 		}
-		public function loadDocuments()
 
 		public static function loadFullDoc()
 		{

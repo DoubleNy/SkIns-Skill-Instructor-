@@ -44,7 +44,7 @@
         <ul class="news_block">
             <li id="news1">
                 <div class="news_img">
-                    <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/documentPreview.html" class="link_news">
+                    <a href="docs?category=math" class="link_news">
                         <img src="public/images/news2.jpg">
                     </a>
                     <!--<div class="test_div">-->
@@ -52,18 +52,18 @@
                         <span class="line"></span>
                         <span class="line"></span>
                         <div class="holder">
-                            <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/documentPreview.html" class="link_detail">
+                            <a href="docs?category=math" class="link_detail">
                                 READ MORE
                             </a>
                         </div>
                     </div>
                 </div>
-                <p>Descriereeee</p>
+                <p>Mathematics</p>
 
             </li>
             <li id="news2">
                 <div class="news_img">
-                    <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_news">
+                    <a href="docs?category=english" class="link_news">
                         <img src="public/images/news2.jpg">
                     </a>
                     <!--<div class="test_div">-->
@@ -71,17 +71,17 @@
                         <span class="line"></span>
                         <span class="line"></span>
                         <div class="holder">
-                            <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_detail">
+                            <a href="docs?category=english" class="link_detail">
                                 READ MORE
                             </a>
                         </div>
                     </div>
                 </div>
-                <p>Descriereeee</p>
+                <p>English</p>
             </li>
             <li id="news3">
                 <div class="news_img">
-                    <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_news">
+                    <a href="docs?category=c" class="link_news">
                         <img src="public/images/news2.jpg">
                     </a>
                     <!--<div class="test_div">-->
@@ -89,68 +89,15 @@
                         <span class="line"></span>
                         <span class="line"></span>
                         <div class="holder">
-                            <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_detail">
+                            <a href="docs?category=c" class="link_detail">
                                 READ MORE
                             </a>
                         </div>
                     </div>
                 </div>
-                <p>Descriereeee</p>
+                <p>C/C++ Programming</p>
             </li>
-            <li id="news4">
-                <div class="news_img">
-                    <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_news">
-                        <img src="../images/news2.jpg">
-                    </a>
-                    <!--<div class="test_div">-->
-                    <div class="hover-block">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <div class="holder">
-                            <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_detail">
-                                READ MORE
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <p>Descriereeee</p>
-            </li>
-            <li id="news5">
-                <div class="news_img">
-                    <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_news">
-                        <img src="../images/news2.jpg">
-                    </a>
-                    <!--<div class="test_div">-->
-                    <div class="hover-block">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <div class="holder">
-                            <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_detail">
-                                READ MORE
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <p>Descriereeee</p>
-            </li>
-            <li id="news6">
-                <div class="news_img">
-                    <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_news">
-                        <img src="../images/news2.jpg">
-                    </a>
-                    <!--<div class="test_div">-->
-                    <div class="hover-block">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <div class="holder">
-                            <a href="http://127.0.0.1/SkIns-Skill-Instructor-/html/displayVideo.html" class="link_detail">
-                                READ MORE
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <p>Descriereeee</p>
-            </li>
+
 
         </ul>
       </center>

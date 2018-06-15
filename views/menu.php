@@ -4,7 +4,6 @@
     <div class="bar3"></div>
 </div>
 
-<div class="logat_icon">nume</div>
 <script src="public/javascript/login.js"></script>
 <script src="public/javascript/home.js"></script>
 <?php
