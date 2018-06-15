@@ -2,6 +2,7 @@
 
 <html>
 <head>
+  <link rel="stylesheet" href="public/css/quiz.css">
 <script src="public/javascript/home.js"></script>
 </head>
 <body>
@@ -10,11 +11,11 @@
         $exec = new DatabaseModel();
         $array = $exec->getQuestions('beginner', $_SESSION['category']);
         $one="";
-        echo ' <center> <p> Quizz for Beginner ' . $_SESSION['category'] . '</p> </center> ';
+        echo ' <center> <p class="quiz_title"> Quizz for Beginner ' . $_SESSION['category'] . '</p> </center> ';
         $i = 0;
         while($i < 25){
               echo '  <center>
-                      <div>
+                      <div class="quizbox">
                           <p> '  . $array[$i] .  ' </p>
                           <input type="checkbox" id="'. ($i+1) .'">'  . $array[$i+1] .  '<br>
                           <input type="checkbox" id="'. ($i+2) .'">'  . $array[$i+2] .  '<br>
@@ -40,7 +41,7 @@
         //$three = $array[14];
         //$four = $array[19];
         //$five = $array[24];
-        echo '<center> <button type="button" onclick="popUpPunctaj('. $one .')">Submit answers!</button> </center>';
+        echo '<center> <button class="quiz_send_button" type="button" onclick="popUpPunctaj('. $one .')">Submit answers!</button> </center>';
 ?>
 </body>
 </html>
