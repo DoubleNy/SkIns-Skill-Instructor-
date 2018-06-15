@@ -1,16 +1,16 @@
 <?php
 	require 'libs/Controller.php';
 
-	class videosFitnessController extends Controller
+	class videosEnglishController extends Controller
 	{
 		public function index()
 		{
-			$this->view->render('videosFitness');
+			$this->view->render('videosEnglish');
 		}
-    public function getFitnessJson(){
-				    $videoList = Controller::interogateYtApi("workout%20hiit%20mass");
+    public function getEnglishJson(){
+				    $videoList = Controller::interogateYtApi("english%20learn%20course");
 						//echo json_encode($videoList);
-						$_SESSION['category'] = "fitnesss";
+						$_SESSION['category'] = "english";
 								echo '<div id="container">';
 								foreach($videoList->items as $item){
 								 //Embed video

@@ -1,23 +1,23 @@
 <?php
 	require 'libs/Controller.php';
 
-	class videosMathController extends Controller
+	class videosAlgorithmsController extends Controller
 	{
 		public function index()
 		{
-			$this->view->render('videosMath');
+			$this->view->render('videosAlgorithms');
+
 		}
-    public function getMathJson(){
-				    $videoList = Controller::interogateYtApi("mathematics%20geometry%20solve");
+    public function getAlgorithmsJson(){
+				    $videoList = Controller::interogateYtApi("Algorithms");
+						$_SESSION['category'] = "Algorithms";
 						//echo json_encode($videoList);
-						$_SESSION['category'] = "Math";
 								echo '<div id="container">';
 								foreach($videoList->items as $item){
 								 //Embed video
 									 if(isset($item->id->videoId)){
 										 $videoTitle = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=snippet&id='.$item->id->videoId.'&key='.$_SESSION['API_key']));
 										 $videoInfo = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?part=statistics&id='.$item->id->videoId.'&key='.$_SESSION['API_key']));
-
 										 if(isset($videoInfo->items[0]->statistics->commentCount))
 										 {
 										 echo '<div class="videoContainer" onclick="window.location.href = \'displayVideo?idOfVideo='.$item->id->videoId.'\'">

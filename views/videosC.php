@@ -18,7 +18,7 @@ session_start();
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 
-<body onload="javascript:loadFitness()">
+<body onload="javascript:loadC()">
 
 <?php require_once 'menu.php'; ?>
 <?php require_once 'slider.php'; ?>
@@ -26,7 +26,7 @@ session_start();
 
 <div class="content">
 
- <div class="subtitle"><h1>Fitness</h1></div>
+ <div class="subtitle"><h1>C/C++ Programming</h1></div>
 
  <center id="centerOf">
 

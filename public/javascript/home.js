@@ -75,10 +75,10 @@ function myFunction(x) {
       }
 }
 
-function loadSurvival(){
+function loadAlgorithms(){
   $.ajax({
       type: "POST",
-      url: "videosSurvival/getSurvivalJson",
+      url: "videosAlgorithms/getAlgorithmsJson",
       success: function(rs){
             if(document.getElementById("centerOf").innerHTML.length <= 50){
                 document.getElementById("centerOf").innerHTML += rs;
@@ -89,19 +89,74 @@ function loadSurvival(){
     });
 }
 
-function microSurival(){
-    window.location.href = 'videosSurvival';
+function microPhotos(){
+    window.location.href = 'videosPhotos';
 }
 
-
-function microFitness(){
-    window.location.href = 'videosFitness';
-}
-
-function loadFitness(){
+function loadPhotos(){
   $.ajax({
       type: "POST",
-      url: "videosFitness/getFitnessJson",
+      url: "videosPhotos/getPhotosJson",
+      success: function(rs){
+            if(document.getElementById("centerOf").innerHTML.length <= 50){
+                document.getElementById("centerOf").innerHTML += rs;
+            }
+      },
+      error: function(xhr, textStatus, errorThrown){
+      }
+    });
+}
+
+function microAlgorithms(){
+    window.location.href = 'videosAlgorithms';
+}
+
+
+
+function microMath(){
+  window.location.href = 'videosMath';
+}
+
+function microEnglish(){
+  window.location.href = 'videosEnglish';
+}
+
+function loadMath(){
+  $.ajax({
+      type: "POST",
+      url: "videosMath/getMathJson",
+      success: function(rs){
+            if(document.getElementById("centerOf").innerHTML.length <= 50){
+                document.getElementById("centerOf").innerHTML += rs;
+            }
+      },
+      error: function(xhr, textStatus, errorThrown){
+      }
+  });
+}
+
+function loadEnglish(){
+  $.ajax({
+      type: "POST",
+      url: "videosEnglish/getEnglishJson",
+      success: function(rs){
+            if(document.getElementById("centerOf").innerHTML.length <= 50){
+                document.getElementById("centerOf").innerHTML += rs;
+            }
+      },
+      error: function(xhr, textStatus, errorThrown){
+      }
+  });
+}
+
+function microC(){
+  window.location.href = 'videosC';
+}
+
+function loadC(){
+  $.ajax({
+      type: "POST",
+      url: "videosC/getCJson",
       success: function(rs){
             if(document.getElementById("centerOf").innerHTML.length <= 50){
                 document.getElementById("centerOf").innerHTML += rs;

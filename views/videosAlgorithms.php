@@ -18,7 +18,7 @@ session_start();
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 
-<body onload="javascript:loadMath()">
+<body onload="javascript:loadAlgorithms()">
 
 <?php require_once 'menu.php'; ?>
 <?php require_once 'slider.php'; ?>
@@ -26,10 +26,9 @@ session_start();
 
 <div class="content">
 
- <div class="subtitle"><h1>Math</h1></div>
+ <div class="subtitle"><h1>Algorithms</h1></div>
 
  <center id="centerOf">
-
  </center>
 <!--<script src="public/javascript/dynamicload.js"></script>-->
 
