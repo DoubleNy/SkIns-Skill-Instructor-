@@ -15,7 +15,6 @@ class VideoSurvivalModel {
               PDO::ATTR_ERRMODE,
               PDO::ERRMODE_EXCEPTION
             );
-            echo "Conectat cu succes!";
             return $pdo;
         } catch (PDOException $e) {
             echo "Conectarea la baza de date a esuat." . $e->getMessage();
