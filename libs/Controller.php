@@ -25,7 +25,8 @@ class Controller {
     {
       $wikiQuerry=ucwords($wikiQuerry);
       $wikiApiURI='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles='.$wikiQuerry.'&redirects=true';
-      $wikiApiURI=str_replace(' ','%20',$wikiApiURI);
+      $wikiApiURI=str_replace(' ','_',$wikiApiURI);
+      $wikiApiURI=str_replace('+','%2B',$wikiApiURI);
       if($wikiJson=json_decode(file_get_contents($wikiApiURI)))
       {
           foreach($wikiJson->query->pages as $key=>$value)
@@ -41,7 +42,8 @@ class Controller {
       {
         $wikiQuerry=ucwords($wikiQuerry);
         $wikiApiURI='https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles='.$wikiQuerry.'&redirects=true';
-        $wikiApiURI=str_replace(' ','%20',$wikiApiURI);
+        $wikiApiURI=str_replace(' ','_',$wikiApiURI);
+        $wikiApiURI=str_replace('+','%2B',$wikiApiURI);
         if($wikiJson=json_decode(file_get_contents($wikiApiURI)))
         {
             foreach($wikiJson->query->pages as $key=>$value)
@@ -61,7 +63,8 @@ class Controller {
 
       $wikiQuerry=ucwords($wikiQuerry);
       $wikiApiURI='http://en.wikipedia.org/w/api.php?action=query&prop=pageimages&format=json&piprop=original&titles='.$wikiQuerry;
-      $wikiApiURI=str_replace(' ','%20',$wikiApiURI);
+      $wikiApiURI=str_replace(' ','_',$wikiApiURI);
+      $wikiApiURI=str_replace('+','%2B',$wikiApiURI);
 
       if($wikiImageJson=json_decode(file_get_contents($wikiApiURI)))
       {
@@ -83,13 +86,15 @@ class Controller {
     }
     public static function drawDoc($param)
     {
+      $title=str_replace('_',' ',$param);
+      $title=str_replace('%2B','+',$title);
       return '<div class="infoDocument">
         <div class="content">
-           <h1>'.$param.'</h1>
+           <h1>'.$title.'</h1>
           '.Controller::truncateStringByParagraph(Controller::getHTMLWikiApi($param)).'
 
 
-          <a href="./documentPreview.html" class="button">Read more ...</a>
+          <a href="docs?document='.$param.'" class="button">Read more ...</a>
 
         </div>
 
@@ -97,5 +102,13 @@ class Controller {
         </div>
 
       </div>';
+    }
+
+    public static function loadFullDoc()
+    {
+      if(isset($_GET['document']))
+      {
+          echo self::getHTMLWikiApi($_GET['document']);
+      }
     }
 }

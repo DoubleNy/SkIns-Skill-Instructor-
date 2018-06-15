@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="public/css/docs.css">
     <link rel="stylesheet" href="public/css/slideshow.css">
     <link rel="stylesheet" href="public/css/template.css">
+    <link rel="stylesheet" href="public/css/docRead.css">
 
     <!--<link rel="stylesheet" href="../css/ft-para.css">-->
     <script src="public/javascript/home.js"></script>
@@ -20,14 +21,51 @@
   </head>
 
   <body>
+    <?php require_once 'documentCategories.php';?>
     <?php require_once 'menu.php';?>
     <?php require_once 'slider.php';?>
 
 
-    <?php echo Controller::drawDoc("Trie");
-          echo Controller::drawDoc("integral");
-          echo Controller::drawDoc("Adobe");
-          echo Controller::drawDoc("Lionel Messi");
+    <?php
+
+    error_reporting(0);
+
+      require_once 'docRead.php';
+
+    if($_GET['category']=='math')
+    {
+      echo Controller::drawDoc("Integral");
+      echo Controller::drawDoc("Pythagorean_theorem");
+      echo Controller::drawDoc("Sine");
+      echo Controller::drawDoc("Riemann_hypothesis");
+  }
+  if($_GET['category']=='english')
+  {
+    echo Controller::drawDoc("English_plurals");
+    echo Controller::drawDoc("Conjuctions");
+    echo Controller::drawDoc("English_prefix");
+    echo Controller::drawDoc("English_modal_verbs");
+  }
+  if($_GET['category']=='c')
+  {
+    echo Controller::drawDoc("C++");
+  }
+  if($_GET['category']=='algorithms')
+  {
+    echo Controller::drawDoc("Lempel–Ziv–Markov_chain_algorithm");
+    echo Controller::drawDoc("Binary_search_algorithm");
+    echo Controller::drawDoc("Huffman_coding");
+    echo Controller::drawDoc("Quicksort");
+  }
+  if($_GET['category']=='photos')
+  {
+    echo Controller::drawDoc('Full-spectrum_photography');
+    echo Controller::drawDoc("Abstract_photography");
+    echo Controller::drawDoc("Image_editing");
+    echo Controller::drawDoc("Motion_blur");
+  }
+
     ?>
+
 
     <?php require_once 'footer.php'; ?>
