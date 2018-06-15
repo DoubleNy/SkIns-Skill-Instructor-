@@ -168,9 +168,9 @@ function loadC(){
 }
 
 function popUpPunctaj(str){
-    //window.alert(one);
     var punctaj = 0;
     var one, two, three, four, five;
+    var xxx = String(str);
     if(document.getElementById("1").checked)
       one = "1";
     if(document.getElementById("2").checked)
@@ -205,13 +205,12 @@ function popUpPunctaj(str){
       five = "2";
     if(document.getElementById("23").checked)
       five = "3";
-    //
-    if(one == str[0]) punctaj += 20;
-    if(two == str[1]) punctaj += 20;
-    if(three == str[2]) punctaj += 20;
-    if(four == str[3]) punctaj += 20;
-    if(five == str[4]) punctaj += 20;
 
+    if(one == xxx[0]) punctaj += 20;
+    if(two == xxx[1]) punctaj += 20;
+    if(three == xxx[2]) punctaj += 20;
+    if(four == xxx[3]) punctaj += 20;
+    if(five == xxx[4]) punctaj += 20;
     window.alert("Punctaj acumulat : " + punctaj);
     window.location.href = 'index';
 }
