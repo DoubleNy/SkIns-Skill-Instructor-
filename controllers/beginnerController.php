@@ -7,5 +7,6 @@
 		{
 			$this->view->render('beginner');
 		}
+		
 	}
 ?>

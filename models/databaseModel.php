@@ -66,6 +66,24 @@ class DatabaseModel {
         return $numar;
 
     }
+
+    public function getQuestions($level, $category){
+          $query = "SELECT question, ans1, ans2, ans3, ans FROM questions where level = ? and category = ?";
+          $statement = $this->conn->prepare($query);
+          $statement->execute([$level, $category]);
+          $ans = array();
+          $i = 0;
+          while ($row = $statement->fetch()) {
+              $ans[$i] = $row['question'];
+              $ans[$i+1] = $row['ans1'];
+              $ans[$i+2] = $row['ans2'];
+              $ans[$i+3] = $row['ans3'];
+              $ans[$i+4] = $row['ans'];
+              $i = $i + 5;
+          }
+          //echo $i;
+          return $ans;
+    }
 }
 
 

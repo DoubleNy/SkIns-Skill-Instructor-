@@ -166,3 +166,52 @@ function loadC(){
       }
   });
 }
+
+function popUpPunctaj(str){
+    //window.alert(one);
+    var punctaj = 0;
+    var one, two, three, four, five;
+    if(document.getElementById("1").checked)
+      one = "1";
+    if(document.getElementById("2").checked)
+      one = "2";
+    if(document.getElementById("3").checked)
+      one = "3";
+    //
+    if(document.getElementById("6").checked)
+      two = "1";
+    if(document.getElementById("7").checked)
+      two = "2";
+    if(document.getElementById("8").checked)
+      two = "3";
+    //
+    if(document.getElementById("11").checked)
+      three = "1";
+    if(document.getElementById("12").checked)
+      three = "2";
+    if(document.getElementById("13").checked)
+      three = "3";
+    //
+    if(document.getElementById("16").checked)
+      four = "1";
+    if(document.getElementById("17").checked)
+      four = "2";
+    if(document.getElementById("18").checked)
+      four = "3";
+    //
+    if(document.getElementById("21").checked)
+      five = "1";
+    if(document.getElementById("22").checked)
+      five = "2";
+    if(document.getElementById("23").checked)
+      five = "3";
+    //
+    if(one == str[0]) punctaj += 20;
+    if(two == str[1]) punctaj += 20;
+    if(three == str[2]) punctaj += 20;
+    if(four == str[3]) punctaj += 20;
+    if(five == str[4]) punctaj += 20;
+
+    window.alert("Punctaj acumulat : " + punctaj);
+    window.location.href = 'index';
+}
